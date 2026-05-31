@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ujjain Sacred Journey — Complete Travel Planner</title>
+  <meta name="description" content="Complete travel guide for Ujjain-Indore-Omkareshwar pilgrimage, June 25-27, 2025. Package plan + extras, packing list, budget & more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    :root{
+      --bg-deep:#06060c;--bg-primary:#0c0c18;--bg-card:rgba(18,18,34,0.65);--bg-card-solid:#161630;--bg-hover:#1e1e3a;
+      --gold-100:#fef3c7;--gold-200:#fde68a;--gold-300:#fcd34d;--gold-400:#f59e0b;--gold-500:#d97706;--gold-600:#b45309;
+      --saffron:#ea580c;--saffron-light:#fb923c;--vermillion:#dc2626;
+      --green:#22c55e;--green-dim:#16a34a;--blue:#3b82f6;--purple:#a855f7;--cyan:#06b6d4;
+      --text-primary:#f0ead6;--text-secondary:#a8a29e;--text-dim:#6b6560;
+      --border:#2a2a4a;--glass-border:rgba(245,158,11,0.12);
+      --radius:16px;--radius-sm:10px;--radius-xs:6px;
+      --shadow:0 8px 32px rgba(0,0,0,0.4);--shadow-gold:0 0 30px rgba(245,158,11,0.08);
+    }
+    html{scroll-behavior:smooth}
+    body{font-family:'Outfit',sans-serif;background:var(--bg-deep);color:var(--text-primary);min-height:100vh;line-height:1.6;overflow-x:hidden}
+    ::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:var(--bg-deep)}::-webkit-scrollbar-thumb{background:var(--gold-600);border-radius:3px}
+    .bg-glow{position:fixed;top:-200px;right:-200px;width:600px;height:600px;background:radial-gradient(circle,rgba(245,158,11,0.06) 0%,transparent 70%);pointer-events:none;z-index:0}
+    .bg-glow-2{position:fixed;bottom:-300px;left:-200px;width:700px;height:700px;background:radial-gradient(circle,rgba(234,88,12,0.04) 0%,transparent 70%);pointer-events:none;z-index:0}
+
+    /* ═══ Nav ═══ */
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:12px 32px;background:rgba(6,6,12,0.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--glass-border);display:flex;justify-content:space-between;align-items:center;transition:all .3s ease}
+    nav.scrolled{padding:8px 32px;background:rgba(6,6,12,0.95)}
+    .nav-brand{font-size:1.1rem;font-weight:700;color:var(--gold-400);display:flex;align-items:center;gap:8px}
+    .nav-links{display:flex;gap:4px;flex-wrap:wrap}
+    .nav-links a{color:var(--text-secondary);text-decoration:none;font-size:.78rem;font-weight:500;padding:6px 12px;border-radius:20px;transition:all .25s ease}
+    .nav-links a:hover,.nav-links a.active{color:var(--gold-300);background:rgba(245,158,11,0.08)}
+
+    /* ═══ Container ═══ */
+    .container{max-width:1200px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
+
+    /* ═══ Hero ═══ */
+    .hero{padding:130px 0 70px;text-align:center;position:relative}
+    .hero::before{content:'';position:absolute;top:60px;left:50%;transform:translateX(-50%);width:800px;height:400px;background:radial-gradient(ellipse,rgba(245,158,11,0.08) 0%,transparent 65%);pointer-events:none}
+    .hero-badge{display:inline-flex;align-items:center;gap:8px;padding:8px 20px;border-radius:30px;background:rgba(245,158,11,0.08);border:1px solid rgba(245,158,11,0.2);color:var(--gold-400);font-size:.85rem;font-weight:500;margin-bottom:24px;animation:fadeDown .6s ease}
+    .hero h1{font-size:3.4rem;font-weight:800;line-height:1.1;margin-bottom:14px;animation:fadeDown .8s ease}
+    .hero h1 .gold{color:var(--gold-400)}.hero h1 .saffron{color:var(--saffron-light)}
+    .hero-sub{font-size:1.1rem;color:var(--text-secondary);max-width:620px;margin:0 auto 36px;animation:fadeDown 1s ease}
+    .hero-stats{display:flex;justify-content:center;gap:36px;flex-wrap:wrap;animation:fadeUp 1s ease}
+    .hero-stat{text-align:center}
+    .hero-stat .num{font-size:1.9rem;font-weight:700;color:var(--gold-300)}
+    .hero-stat .label{font-size:.75rem;color:var(--text-dim);text-transform:uppercase;letter-spacing:1px}
+
+    /* ═══ Sections ═══ */
+    .section{padding:56px 0}
+    .section-label{display:inline-flex;align-items:center;gap:8px;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:2px;color:var(--gold-500);margin-bottom:10px}
+    .section-title{font-size:1.9rem;font-weight:700;margin-bottom:6px}
+    .section-desc{color:var(--text-secondary);font-size:.92rem;margin-bottom:32px;max-width:650px}
+
+    /* ═══ Cards ═══ */
+    .card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;backdrop-filter:blur(10px);transition:all .3s ease}
+    .card:hover{border-color:var(--glass-border);box-shadow:var(--shadow-gold)}
+
+    /* ═══ Package Banner ═══ */
+    .pkg-banner{background:linear-gradient(135deg,rgba(245,158,11,0.1),rgba(234,88,12,0.06));border:1px solid rgba(245,158,11,0.25);border-radius:var(--radius);padding:28px 32px;margin-bottom:24px}
+    .pkg-banner h3{color:var(--gold-300);font-size:1.2rem;margin-bottom:12px;display:flex;align-items:center;gap:10px}
+    .pkg-price{font-size:2.2rem;font-weight:800;color:var(--gold-300);margin-bottom:4px}
+    .pkg-price .alt{font-size:1rem;color:var(--text-secondary);font-weight:400}
+    .pkg-includes{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin-top:16px}
+    .pkg-inc-item{font-size:.85rem;color:var(--text-secondary);display:flex;align-items:center;gap:8px}
+    .pkg-inc-item .check{color:var(--green);font-weight:bold}
+
+    /* ═══ Badge Tags ═══ */
+    .badge{display:inline-flex;align-items:center;gap:4px;padding:3px 10px;border-radius:20px;font-size:.68rem;font-weight:600;letter-spacing:.3px}
+    .badge-pkg{background:rgba(34,197,94,0.12);color:var(--green);border:1px solid rgba(34,197,94,0.2)}
+    .badge-addon{background:rgba(168,85,247,0.12);color:var(--purple);border:1px solid rgba(168,85,247,0.2)}
+    .badge-bhasma{background:rgba(234,88,12,0.15);color:var(--saffron-light);border:1px solid rgba(234,88,12,0.3);animation:pulse 2s infinite}
+    .badge-time{background:rgba(59,130,246,0.1);color:var(--blue)}
+    .badge-tip{background:rgba(34,197,94,0.1);color:var(--green)}
+    .badge-warn{background:rgba(220,38,38,0.1);color:var(--vermillion)}
+    .badge-gold{background:rgba(245,158,11,0.1);color:var(--gold-400)}
+    @keyframes pulse{0%,100%{opacity:1}50%{opacity:.6}}
+
+    /* ═══ Booking Cards ═══ */
+    .booking-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:20px}
+    .bk-card{padding:24px;border-radius:var(--radius);background:var(--bg-card);border:1px solid var(--border)}
+    .bk-card h4{display:flex;align-items:center;gap:8px;font-size:1rem;margin-bottom:14px;color:var(--gold-300)}
+    .bk-row{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid rgba(42,42,74,0.4);font-size:.84rem}
+    .bk-row:last-child{border-bottom:none}
+    .bk-row .lbl{color:var(--text-secondary)}.bk-row .val{font-weight:600}
+    .bk-row .val.grn{color:var(--green)}.bk-row .val.gld{color:var(--gold-400)}
+
+    /* ═══ Alert ═══ */
+    .alert{border-radius:var(--radius);padding:22px 26px;display:flex;gap:14px;align-items:flex-start;margin-bottom:20px}
+    .alert-heat{background:linear-gradient(135deg,rgba(234,88,12,0.1),rgba(220,38,38,0.08));border:1px solid rgba(234,88,12,0.25)}
+    .alert-bhasma{background:linear-gradient(135deg,rgba(245,158,11,0.1),rgba(234,88,12,0.08));border:1px solid rgba(245,158,11,0.3)}
+    .alert .icon{font-size:1.5rem;flex-shrink:0;margin-top:2px}
+    .alert h4{font-size:.95rem;margin-bottom:5px}
+    .alert-heat h4{color:var(--saffron-light)}.alert-bhasma h4{color:var(--gold-300)}
+    .alert p,.alert li{font-size:.84rem;color:var(--text-secondary)}
+    .alert ul{list-style:none;padding:0;margin-top:6px}
+    .alert ul li{padding:3px 0;display:flex;align-items:baseline;gap:8px}
+    .alert ul li::before{content:'•';color:var(--saffron-light);font-weight:bold;flex-shrink:0}
+
+    /* ═══ Day Tabs ═══ */
+    .day-tabs{display:flex;gap:8px;margin-bottom:28px;flex-wrap:wrap}
+    .day-tab{padding:12px 22px;border-radius:12px;border:1px solid var(--border);background:var(--bg-card);color:var(--text-secondary);font-size:.88rem;font-weight:500;cursor:pointer;transition:all .25s ease;font-family:'Outfit',sans-serif;text-align:left}
+    .day-tab:hover{border-color:rgba(245,158,11,0.3);color:var(--gold-300)}
+    .day-tab.active{background:linear-gradient(135deg,rgba(245,158,11,0.15),rgba(234,88,12,0.1));border-color:var(--gold-500);color:var(--gold-300);font-weight:600}
+    .day-tab .tab-date{font-size:.7rem;color:var(--text-dim);display:block;margin-top:2px}
+    .day-tab.active .tab-date{color:var(--gold-500)}
+    .day-content{display:none;animation:fadeIn .4s ease}.day-content.active{display:block}
+
+    .day-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;flex-wrap:wrap;gap:12px}
+    .day-header h3{font-size:1.3rem}
+    .intensity-row{display:flex;align-items:center;gap:8px;font-size:.82rem;color:var(--text-secondary)}
+    .i-dots{display:flex;gap:4px}
+    .i-dot{width:12px;height:12px;border-radius:50%;background:var(--border)}
+    .i-dot.on{background:var(--gold-400)}.i-dot.hot{background:var(--saffron)}
+
+    /* ═══ Timeline ═══ */
+    .timeline{position:relative;padding-left:38px}
+    .timeline::before{content:'';position:absolute;left:13px;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--gold-500),var(--border),var(--gold-500))}
+    .tl-item{position:relative;margin-bottom:8px;padding:16px 20px;border-radius:var(--radius-sm);background:var(--bg-card);border:1px solid var(--border);transition:all .3s ease}
+    .tl-item:hover{border-color:rgba(245,158,11,0.2);background:var(--bg-hover)}
+    .tl-item::before{content:'';position:absolute;left:-31px;top:22px;width:12px;height:12px;border-radius:50%;background:var(--bg-deep);border:2px solid var(--gold-500)}
+    .tl-item.pkg::before{background:var(--green);border-color:var(--green)}
+    .tl-item.addon::before{background:var(--purple);border-color:var(--purple)}
+    .tl-item.bhasma::before{background:var(--saffron);border-color:var(--saffron);box-shadow:0 0 10px rgba(234,88,12,0.5)}
+    .tl-item.rest::before{border-color:var(--blue)}.tl-item.food::before{border-color:var(--saffron)}
+    .tl-item.travel::before{border-color:var(--cyan)}
+    .tl-item.highlight::before{background:var(--gold-400);border-color:var(--gold-400);box-shadow:0 0 10px rgba(245,158,11,0.4)}
+    .tl-time{font-size:.75rem;font-weight:600;color:var(--gold-400);text-transform:uppercase;letter-spacing:.5px;margin-bottom:3px}
+    .tl-title{font-size:1rem;font-weight:600;margin-bottom:3px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+    .tl-desc{font-size:.83rem;color:var(--text-secondary)}
+    .tl-tags{display:flex;gap:5px;margin-top:7px;flex-wrap:wrap}
+
+    /* ═══ Priority Matrix ═══ */
+    .priority-section{margin-bottom:28px}
+    .priority-header{display:flex;align-items:center;gap:10px;margin-bottom:16px;padding:12px 18px;border-radius:var(--radius-sm);cursor:pointer;transition:all .25s ease}
+    .priority-header:hover{background:var(--bg-hover)}
+    .priority-header h4{font-size:1rem;font-weight:600;flex:1}
+    .priority-header .dot{width:14px;height:14px;border-radius:50%;flex-shrink:0}
+    .priority-header .count{font-size:.78rem;color:var(--text-dim);background:var(--bg-card);padding:2px 10px;border-radius:12px}
+    .dot-must{background:var(--gold-400)}.dot-when{background:var(--saffron-light)}.dot-good{background:var(--blue)}.dot-time{background:var(--purple)}.dot-skip{background:var(--text-dim)}
+    .p-items{display:grid;gap:8px}
+    .p-item{display:flex;align-items:flex-start;gap:12px;padding:14px 18px;border-radius:var(--radius-xs);background:var(--bg-card);border:1px solid var(--border);transition:all .25s ease}
+    .p-item:hover{border-color:rgba(245,158,11,0.15)}
+    .p-rank{min-width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;flex-shrink:0}
+    .p-rank.gold{background:rgba(245,158,11,0.15);color:var(--gold-400)}
+    .p-rank.saffron{background:rgba(234,88,12,0.12);color:var(--saffron-light)}
+    .p-rank.blue{background:rgba(59,130,246,0.12);color:var(--blue)}
+    .p-rank.purple{background:rgba(168,85,247,0.12);color:var(--purple)}
+    .p-rank.dim{background:rgba(107,101,96,0.15);color:var(--text-dim)}
+    .p-info{flex:1}.p-name{font-size:.9rem;font-weight:500;margin-bottom:2px}
+    .p-detail{font-size:.76rem;color:var(--text-secondary)}
+    .p-timing{font-size:.72rem;color:var(--gold-400);margin-top:3px;font-weight:500}
+
+    /* ═══ Route Flow ═══ */
+    .route-flow{display:flex;align-items:center;gap:0;overflow-x:auto;padding:16px 0;flex-wrap:wrap;justify-content:center}
+    .route-node{padding:12px 18px;border-radius:var(--radius-sm);background:var(--bg-card);border:1px solid var(--border);text-align:center;min-width:90px;transition:all .3s ease;flex-shrink:0}
+    .route-node:hover{border-color:rgba(245,158,11,0.3);transform:scale(1.05)}
+    .route-node .r-icon{font-size:1.1rem;margin-bottom:3px}.route-node .r-name{font-size:.8rem;font-weight:600}.route-node .r-day{font-size:.65rem;color:var(--text-dim)}
+    .route-node.start{border-color:var(--green)}.route-node.end{border-color:var(--vermillion)}.route-node.hl{border-color:var(--gold-400);background:rgba(245,158,11,0.06)}
+    .route-arrow{color:var(--text-dim);font-size:.72rem;padding:0 6px;display:flex;flex-direction:column;align-items:center;gap:1px;flex-shrink:0}
+    .route-arrow .dist{font-size:.62rem;color:var(--text-dim);white-space:nowrap}
+
+    /* ═══ Budget ═══ */
+    .budget-total{text-align:center;padding:28px;background:linear-gradient(135deg,rgba(245,158,11,0.08),rgba(234,88,12,0.05));border:1px solid rgba(245,158,11,0.2);border-radius:var(--radius);margin-bottom:20px}
+    .budget-total .amount{font-size:2.6rem;font-weight:800;color:var(--gold-300)}
+    .budget-total .sub{font-size:.95rem;color:var(--text-secondary);margin-top:4px}
+    .budget-total .note{font-size:.78rem;color:var(--text-dim);margin-top:6px}
+    .budget-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+    .b-bar-group{margin-bottom:16px}
+    .b-bar-label{display:flex;justify-content:space-between;font-size:.84rem;margin-bottom:6px}
+    .b-bar-label .cat{color:var(--text-secondary)}.b-bar-label .amt{color:var(--gold-300);font-weight:600}
+    .b-bar-track{height:8px;background:var(--border);border-radius:4px;overflow:hidden}
+    .b-bar-fill{height:100%;border-radius:4px;transition:width 1.2s cubic-bezier(.4,0,.2,1);width:0}
+    .b-fill-pkg{background:linear-gradient(90deg,var(--gold-500),var(--gold-300))}
+    .b-fill-food{background:linear-gradient(90deg,var(--saffron),var(--saffron-light))}
+    .b-fill-extra{background:linear-gradient(90deg,var(--purple),#c084fc)}
+    .b-fill-shop{background:linear-gradient(90deg,var(--blue),#60a5fa)}
+    .b-fill-misc{background:linear-gradient(90deg,var(--green-dim),var(--green))}
+
+    /* ═══ Food ═══ */
+    .food-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+    .food-card{padding:22px;border-radius:var(--radius);background:var(--bg-card);border:1px solid var(--border);transition:all .3s ease}
+    .food-card:hover{border-color:rgba(234,88,12,0.3);transform:translateY(-2px)}
+    .food-card h4{font-size:1rem;margin-bottom:3px;display:flex;align-items:center;gap:8px}
+    .food-card .sub-type{font-size:.76rem;color:var(--saffron-light);margin-bottom:12px}
+    .f-item{display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid rgba(42,42,74,0.5)}
+    .f-item:last-child{border-bottom:none}
+    .f-item .dish{font-size:.86rem;font-weight:500}.f-item .price{font-size:.78rem;color:var(--gold-400);font-weight:600}
+    .f-item .dish-note{font-size:.7rem;color:var(--text-dim)}
+
+    /* ═══ Packing ═══ */
+    .pack-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:18px}
+    .pack-cat{padding:22px;border-radius:var(--radius);background:var(--bg-card);border:1px solid var(--border)}
+    .pack-cat h4{font-size:.95rem;font-weight:600;margin-bottom:14px;display:flex;align-items:center;gap:8px;color:var(--gold-300)}
+    .pk-item{display:flex;align-items:center;gap:10px;padding:7px 0;cursor:pointer;transition:opacity .25s ease}
+    .pk-item.checked{opacity:.4}.pk-item.checked .pk-text{text-decoration:line-through}
+    .pk-box{width:20px;height:20px;border-radius:5px;border:2px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .2s ease;font-size:.7rem;color:transparent}
+    .pk-item.checked .pk-box{background:var(--gold-500);border-color:var(--gold-500);color:var(--bg-deep)}
+    .pk-text{font-size:.86rem}.pk-note{font-size:.7rem;color:var(--text-dim);margin-left:30px;margin-top:-3px;padding-bottom:3px}
+    .pack-progress{margin-bottom:22px;padding:14px 22px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);display:flex;align-items:center;gap:14px}
+    .pp-bar{flex:1;height:8px;background:var(--border);border-radius:4px;overflow:hidden}
+    .pp-fill{height:100%;background:linear-gradient(90deg,var(--gold-500),var(--gold-300));border-radius:4px;transition:width .4s ease;width:0}
+    .pp-text{font-size:.84rem;font-weight:600;color:var(--gold-400);white-space:nowrap}
+
+    /* ═══ Tips ═══ */
+    .tips-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:18px}
+    .tip-card{padding:22px;border-radius:var(--radius);background:var(--bg-card);border:1px solid var(--border);transition:all .3s ease}
+    .tip-card:hover{border-color:rgba(245,158,11,0.15)}
+    .tip-card h4{font-size:.95rem;font-weight:600;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+    .tip-card ul{list-style:none;padding:0}
+    .tip-card ul li{font-size:.84rem;color:var(--text-secondary);padding:5px 0;padding-left:18px;position:relative}
+    .tip-card ul li::before{content:'→';position:absolute;left:0;color:var(--gold-500);font-weight:bold}
+
+    /* ═══ Overview Grid ═══ */
+    .ov-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+    .ov-card{padding:22px;border-radius:var(--radius);background:var(--bg-card);border:1px solid var(--border);transition:all .3s ease}
+    .ov-card:hover{border-color:rgba(245,158,11,0.2);transform:translateY(-2px);box-shadow:var(--shadow-gold)}
+    .ov-icon{width:42px;height:42px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;margin-bottom:12px}
+    .ov-icon.gold{background:rgba(245,158,11,0.12)}.ov-icon.saffron{background:rgba(234,88,12,0.12)}
+    .ov-icon.green{background:rgba(34,197,94,0.12)}.ov-icon.blue{background:rgba(59,130,246,0.12)}
+    .ov-icon.purple{background:rgba(168,85,247,0.12)}.ov-icon.red{background:rgba(220,38,38,0.12)}
+    .ov-card h3{font-size:.95rem;font-weight:600;margin-bottom:4px}
+    .ov-card .val{font-size:1.4rem;font-weight:700;color:var(--gold-300);margin-bottom:3px}
+    .ov-card p{font-size:.8rem;color:var(--text-secondary)}
+
+    /* ═══ Divider ═══ */
+    .divider{height:1px;background:linear-gradient(90deg,transparent,var(--border),transparent);margin:36px 0}
+
+    /* ═══ Visual Timeline (Gantt) ═══ */
+    .gantt-wrap{overflow-x:auto;padding-bottom:8px;-webkit-overflow-scrolling:touch}
+    .gantt{min-width:900px;position:relative}
+    .gantt-legend{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:20px}
+    .gantt-legend-item{display:flex;align-items:center;gap:6px;font-size:.76rem;color:var(--text-secondary)}
+    .gantt-legend-dot{width:12px;height:12px;border-radius:3px;flex-shrink:0}
+    .gantt-day{margin-bottom:16px}
+    .gantt-day-label{font-size:.82rem;font-weight:600;color:var(--text-primary);margin-bottom:6px;display:flex;align-items:center;gap:8px}
+    .gantt-day-label .gdl-sub{font-size:.7rem;color:var(--text-dim);font-weight:400}
+    .gantt-ruler{display:flex;position:relative;margin-bottom:3px;padding-left:0}
+    .gantt-ruler-mark{font-size:.62rem;color:var(--text-dim);text-align:center;border-left:1px solid rgba(42,42,74,0.4);padding-left:4px;flex-shrink:0}
+    .gantt-track{display:flex;height:44px;border-radius:8px;overflow:hidden;background:rgba(18,18,34,0.4);border:1px solid var(--border);position:relative}
+    .gantt-block{display:flex;align-items:center;justify-content:center;overflow:hidden;cursor:pointer;position:relative;transition:filter .2s ease,transform .2s ease;border-right:1px solid rgba(6,6,12,0.5)}
+    .gantt-block:hover{filter:brightness(1.3);transform:scaleY(1.1);z-index:2}
+    .gantt-block:last-child{border-right:none}
+    .gantt-block span{font-size:.65rem;font-weight:600;color:rgba(255,255,255,0.92);text-shadow:0 1px 3px rgba(0,0,0,0.5);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:0 5px;pointer-events:none}
+    .gantt-block .gb-time{position:absolute;bottom:2px;left:0;right:0;text-align:center;font-size:.55rem;color:rgba(255,255,255,0.55);font-weight:400;pointer-events:none}
+    /* Block colors */
+    .gb-temple{background:linear-gradient(135deg,#d97706,#f59e0b)}
+    .gb-temple-hl{background:linear-gradient(135deg,#b45309,#d97706);box-shadow:inset 0 0 12px rgba(255,255,255,0.1)}
+    .gb-addon{background:linear-gradient(135deg,#7c3aed,#a855f7)}
+    .gb-food{background:linear-gradient(135deg,#c2410c,#ea580c)}
+    .gb-rest{background:linear-gradient(135deg,#1e40af,#3b82f6)}
+    .gb-travel{background:linear-gradient(135deg,#0e7490,#06b6d4)}
+    .gb-special{background:linear-gradient(135deg,#b91c1c,#ef4444);animation:pulseGlow 3s infinite}
+    .gb-sarafa{background:linear-gradient(135deg,#a16207,#eab308)}
+    .gb-gap{background:transparent;cursor:default}
+    .gb-gap:hover{filter:none;transform:none}
+    @keyframes pulseGlow{0%,100%{box-shadow:inset 0 0 8px rgba(255,200,100,0.2)}50%{box-shadow:inset 0 0 16px rgba(255,200,100,0.4)}}
+    /* Tooltip */
+    .gantt-block[data-tip]:hover::after{content:attr(data-tip);position:absolute;top:-36px;left:50%;transform:translateX(-50%);background:rgba(6,6,12,0.95);color:var(--text-primary);font-size:.72rem;font-weight:500;padding:5px 12px;border-radius:6px;white-space:nowrap;z-index:10;border:1px solid var(--border);pointer-events:none}
+
+    /* ═══ Footer ═══ */
+    footer{text-align:center;padding:44px 24px;color:var(--text-dim);font-size:.8rem;border-top:1px solid var(--border)}
+    footer .mantra{font-family:'Noto Sans Devanagari',sans-serif;font-size:1.1rem;color:var(--gold-500);margin-bottom:6px}
+
+    /* ═══ Animations ═══ */
+    @keyframes fadeDown{from{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+    .reveal{opacity:0;transform:translateY(30px);transition:opacity .6s ease,transform .6s ease}
+    .reveal.visible{opacity:1;transform:translateY(0)}
+
+    /* ═══ Responsive ═══ */
+    @media(max-width:768px){
+      .hero h1{font-size:2.1rem}.hero-stats{gap:20px}nav{padding:10px 14px}.nav-links{display:none}
+      .container{padding:0 14px}.section-title{font-size:1.5rem}.pkg-price{font-size:1.8rem}
+      .route-flow{justify-content:flex-start}.budget-total .amount{font-size:2rem}
+      .gantt{min-width:750px}
+    }
+  </style>
+</head>
+<body>
+<div class="bg-glow"></div><div class="bg-glow-2"></div>
+
+<!-- ═══ Nav ═══ -->
+<nav id="navbar">
+  <div class="nav-brand"><span>🕉️</span> Sacred Journey</div>
+  <div class="nav-links">
+    <a href="#package">Package</a>
+    <a href="#visual-timeline">Timeline</a>
+    <a href="#itinerary" class="active">Itinerary</a>
+    <a href="#priority">Priority</a>
+    <a href="#route">Route</a>
+    <a href="#budget">Budget</a>
+    <a href="#food">Food</a>
+    <a href="#packing">Packing</a>
+    <a href="#tips">Tips</a>
+  </div>
+</nav>
+
+<!-- ═══ Hero ═══ -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-badge">📦 PREMIUM PACKAGE — Ujjain + Indore + Omkareshwar</div>
+    <h1>The <span class="gold">Sacred City</span> of<br><span class="saffron">Mahakal</span> Awaits</h1>
+    <p class="hero-sub">2 Jyotirlingas · 15+ Temples · India's #1 Street Food Market · 3 Cities in 3 Days</p>
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="num">3</div><div class="label">Days</div></div>
+      <div class="hero-stat"><div class="num">3</div><div class="label">Cities</div></div>
+      <div class="hero-stat"><div class="num">2</div><div class="label">Jyotirlingas</div></div>
+      <div class="hero-stat"><div class="num">15+</div><div class="label">Temples</div></div>
+      <div class="hero-stat"><div class="num">2</div><div class="label">Friends</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Package Overview ═══ -->
+<section class="section" id="package">
+  <div class="container">
+    <div class="section-label">📦 Tour Package</div>
+    <h2 class="section-title">Your Booked Package</h2>
+    <p class="section-desc">Travel agent package — everything organized for you. Below is exactly what's included and what you can add on your own.</p>
+
+    <div class="pkg-banner reveal">
+      <h3>📦 PREMIUM PACKAGE — Travel Agent Plan</h3>
+      <div class="pkg-price">₹4,500 <span class="alt">/ person (sharing cab) &nbsp;|&nbsp; ₹6,000 private cab</span></div>
+      <p style="font-size:.85rem;color:var(--text-secondary);margin-bottom:8px">2 Nights + 3 Days — Ujjain + Indore + Omkareshwar + Mamleshwar</p>
+      <p style="font-size:.82rem;color:var(--text-secondary);margin-bottom:4px">📞 Enquiry & Booking: <strong style="color:var(--gold-300)">8976217145</strong> &nbsp;|&nbsp; ⚠️ Limited Seats | Small Group</p>
+      <div class="pkg-includes">
+        <div class="pkg-inc-item"><span class="check">✔</span> Premium Hotel Stay (2 nights)</div>
+        <div class="pkg-inc-item"><span class="check">✔</span> Meals included (except Sarafa dinner)</div>
+        <div class="pkg-inc-item"><span class="check">✔</span> All Transfers & Darshan</div>
+        <div class="pkg-inc-item"><span class="check">✔</span> Mahakal Shighra Darshan (VIP)</div>
+        <div class="pkg-inc-item"><span class="check">✔</span> Omkareshwar Shighra Darshan (VIP)</div>
+        <div class="pkg-inc-item"><span class="check">✔</span> Pickup from Ujjain</div>
+      </div>
+    </div>
+
+    <!-- Train Bookings -->
+    <div class="booking-grid reveal">
+      <div class="bk-card">
+        <h4>🚂 Outbound Journey</h4>
+        <div class="bk-row"><span class="lbl">Train</span><span class="val">DAUND INDORE EXP (22943)</span></div>
+        <div class="bk-row"><span class="lbl">PNR</span><span class="val gld">8147798488</span></div>
+        <div class="bk-row"><span class="lbl">Depart</span><span class="val">Pune Jn — Wed, 24 Jun, 15:33</span></div>
+        <div class="bk-row"><span class="lbl">Arrive</span><span class="val">Ujjain Jn — Thu, 25 Jun, 06:25</span></div>
+        <div class="bk-row"><span class="lbl">Duration</span><span class="val">14h 52m</span></div>
+        <div class="bk-row"><span class="lbl">Status</span><span class="val grn">✓ BOOKED</span></div>
+      </div>
+      <div class="bk-card">
+        <h4>🚂 Return Journey</h4>
+        <div class="bk-row"><span class="lbl">Train</span><span class="val">INDB DAUND EXP (22944)</span></div>
+        <div class="bk-row"><span class="lbl">PNR</span><span class="val gld">8247844113</span></div>
+        <div class="bk-row"><span class="lbl">Depart</span><span class="val">Ujjain Jn — Sat, 27 Jun, 17:55</span></div>
+        <div class="bk-row"><span class="lbl">Arrive</span><span class="val">Pune Jn — Sun, 28 Jun, 08:50</span></div>
+        <div class="bk-row"><span class="lbl">Duration</span><span class="val">14h 55m</span></div>
+        <div class="bk-row"><span class="lbl">Status</span><span class="val grn">✓ BOOKED</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Alerts ═══ -->
+<section class="section" id="alerts" style="padding-top:0">
+  <div class="container">
+    <div class="alert alert-bhasma reveal">
+      <div class="icon">🔥</div>
+      <div>
+        <h4>⚡ ACTION REQUIRED — Book Bhasma Aarti Separately!</h4>
+        <p>Bhasma Aarti is <strong>NOT included</strong> in the package. This is the #1 reason people visit Ujjain — book it yourself NOW.</p>
+        <ul>
+          <li>Book at <strong>shrimahakaleshwar.com</strong> or mahakaleshwar.nic.in</li>
+          <li>Only ~150 online slots per day — sells out days in advance</li>
+          <li>Aarti happens daily at <strong>4:00 AM</strong> — reach temple by 3:00 AM</li>
+          <li>Need Aadhaar number for registration. Print confirmation.</li>
+          <li>Best day: <strong>Day 1 (June 25)</strong> — arrive 6:25 AM, but aarti is at 4 AM, so you'd miss it. Ask operator to arrange Day 2 early start OR arrive a day early.</li>
+          <li>Alternative: Ask operator if Day 1 can start with Bhasma Aarti if you reach early, or request Day 2 pre-dawn slot.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="alert alert-heat reveal">
+      <div class="icon">🌡️</div>
+      <div>
+        <h4>June Weather — Extreme Heat (40–44°C)</h4>
+        <p>Late June is pre-monsoon in MP. Temperatures hit 40–44°C daytime. Monsoon expected to arrive around June 17–20, so by June 25 there may be brief heavy showers too.</p>
+        <ul>
+          <li>Daytime: 38–44°C (feels like 46°C with humidity)</li>
+          <li>Mandatory: ORS packets, sunscreen SPF 50+, 2L water bottle, cap/umbrella</li>
+          <li>Rest from 1 PM–4 PM — hotel AC time is NON-NEGOTIABLE</li>
+          <li>Best temple hours: 6–11 AM and 4–7 PM</li>
+          <li>Possible pre-monsoon showers: carry compact umbrella</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ov-grid reveal">
+      <div class="ov-card"><div class="ov-icon gold">📅</div><h3>Duration</h3><div class="val">2N + 3D</div><p>Thu 25 Jun (6:25 AM) → Sat 27 Jun (5:55 PM)</p></div>
+      <div class="ov-card"><div class="ov-icon saffron">🌡️</div><h3>Weather</h3><div class="val">40–44°C</div><p>Extreme heat + possible monsoon showers. Carry ORS & umbrella.</p></div>
+      <div class="ov-card"><div class="ov-icon green">💰</div><h3>Package Cost</h3><div class="val">₹4,500</div><p>Per person (shared cab). All-inclusive except Sarafa dinner.</p></div>
+      <div class="ov-card"><div class="ov-icon blue">🔱</div><h3>Jyotirlingas</h3><div class="val">2 of 12</div><p>Mahakaleshwar (#3) + Omkareshwar (#4). VIP darshan included.</p></div>
+      <div class="ov-card"><div class="ov-icon purple">🍽️</div><h3>Food Highlight</h3><div class="val">Sarafa Bazaar</div><p>India's most famous night food market. Opens after 9 PM.</p></div>
+      <div class="ov-card"><div class="ov-icon red">⚠️</div><h3>Key Alert</h3><div class="val">Bhasma Aarti</div><p>NOT in package! Book at shrimahakaleshwar.com ASAP.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Visual Gantt Timeline ═══ -->
+<section class="section" id="visual-timeline">
+  <div class="container">
+    <div class="section-label">📊 Visual Timeline</div>
+    <h2 class="section-title">Trip at a Glance</h2>
+    <p class="section-desc">Bird's-eye view of your entire journey. Hover on any block for details. Scroll horizontally on mobile.</p>
+
+    <div class="gantt-legend reveal">
+      <div class="gantt-legend-item"><div class="gantt-legend-dot" style="background:linear-gradient(135deg,#d97706,#f59e0b)"></div> Temple / Darshan (📦 Package)</div>
+      <div class="gantt-legend-item"><div class="gantt-legend-dot" style="background:linear-gradient(135deg,#7c3aed,#a855f7)"></div> Add-on (Your Extra)</div>
+      <div class="gantt-legend-item"><div class="gantt-legend-dot" style="background:linear-gradient(135deg,#b91c1c,#ef4444)"></div> Special (Bhasma Aarti)</div>
+      <div class="gantt-legend-item"><div class="gantt-legend-dot" style="background:linear-gradient(135deg,#c2410c,#ea580c)"></div> Food / Meals</div>
+      <div class="gantt-legend-item"><div class="gantt-legend-dot" style="background:linear-gradient(135deg,#1e40af,#3b82f6)"></div> Rest / Hotel</div>
+      <div class="gantt-legend-item"><div class="gantt-legend-dot" style="background:linear-gradient(135deg,#0e7490,#06b6d4)"></div> Travel</div>
+      <div class="gantt-legend-item"><div class="gantt-legend-dot" style="background:linear-gradient(135deg,#a16207,#eab308)"></div> Sarafa Bazaar</div>
+    </div>
+
+    <div class="gantt-wrap reveal">
+      <div class="gantt" id="ganttChart"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Day-by-Day Itinerary ═══ -->
+<section class="section" id="itinerary">
+  <div class="container">
+    <div class="section-label">🗓️ Day-by-Day Plan</div>
+    <h2 class="section-title">Complete Itinerary</h2>
+    <p class="section-desc">Package items marked <span class="badge badge-pkg">📦 PACKAGE</span> &nbsp; Your personal add-ons marked <span class="badge badge-addon">✨ ADD-ON</span></p>
+
+    <div class="day-tabs">
+      <button class="day-tab active" onclick="switchDay(0)">Day 0 — Travel<span class="tab-date">Wed, Jun 24</span></button>
+      <button class="day-tab" onclick="switchDay(1)">Day 1 — Ujjain<span class="tab-date">Thu, Jun 25</span></button>
+      <button class="day-tab" onclick="switchDay(2)">Day 2 — Ujjain → Indore<span class="tab-date">Fri, Jun 26</span></button>
+      <button class="day-tab" onclick="switchDay(3)">Day 3 — Omkareshwar<span class="tab-date">Sat, Jun 27</span></button>
+    </div>
+
+    <!-- ═══ DAY 0 ═══ -->
+    <div class="day-content active" id="day0">
+      <div class="day-header">
+        <h3>🚂 Day 0 — Departure from Pune</h3>
+        <div class="intensity-row">Intensity: <div class="i-dots"><div class="i-dot on"></div><div class="i-dot"></div><div class="i-dot"></div><div class="i-dot"></div><div class="i-dot"></div></div> Light</div>
+      </div>
+      <div class="timeline">
+        <div class="tl-item travel">
+          <div class="tl-time">14:30 — Reach Station</div>
+          <div class="tl-title">🚉 Arrive at Pune Junction</div>
+          <div class="tl-desc">Reach 60 min before departure. Stock up on snacks, water, and dinner for the train.</div>
+          <div class="tl-tags"><span class="badge badge-tip">Carry chain lock for luggage</span></div>
+        </div>
+        <div class="tl-item highlight">
+          <div class="tl-time">15:33 — Board Train</div>
+          <div class="tl-title">🚂 DAUND INDORE EXP (22943) <span class="badge badge-gold">PNR: 8147798488</span></div>
+          <div class="tl-desc">Overnight journey: 14h 52m. Route passes through Daund → Ahmednagar → Manmad → Bhusaval → Khandwa → Dewas → Ujjain.</div>
+          <div class="tl-tags"><span class="badge badge-time">14h 52m journey</span></div>
+        </div>
+        <div class="tl-item rest">
+          <div class="tl-time">21:00 — Sleep</div>
+          <div class="tl-title">😴 Sleep Early — Big Day Tomorrow</div>
+          <div class="tl-desc">Set alarm for 5:45 AM. Sleep mask helps. Tomorrow starts immediately at arrival.</div>
+          <div class="tl-tags"><span class="badge badge-warn">⏰ Set alarm: 5:45 AM</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══ DAY 1 — UJJAIN ═══ -->
+    <div class="day-content" id="day1">
+      <div class="day-header">
+        <h3>🕉️ Day 1 — Ujjain Darshan</h3>
+        <div class="intensity-row">Intensity: <div class="i-dots"><div class="i-dot on"></div><div class="i-dot on"></div><div class="i-dot on"></div><div class="i-dot on"></div><div class="i-dot"></div></div> Heavy</div>
+      </div>
+      <div class="timeline">
+        <div class="tl-item travel">
+          <div class="tl-time">06:25 — Arrival</div>
+          <div class="tl-title">🚉 Arrive Ujjain Junction <span class="badge badge-pkg">📦 PACKAGE</span></div>
+          <div class="tl-desc">Package pickup from station. Transfer to hotel. Freshen up after overnight train.</div>
+          <div class="tl-tags"><span class="badge badge-tip">Pickup included in package</span></div>
+        </div>
+        <div class="tl-item rest">
+          <div class="tl-time">06:45 – 08:30</div>
+          <div class="tl-title">🏨 Hotel Check-in, Freshen Up & Breakfast</div>
+          <div class="tl-desc">Premium stay. Quick shower, change into temple-appropriate clothes (cotton kurta/simple outfit). Have hearty breakfast — you'll need the energy.</div>
+        </div>
+        <div class="tl-item pkg">
+          <div class="tl-time">09:00 – 11:30 — Morning</div>
+          <div class="tl-title">🔱 Mahakaleshwar Jyotirlinga <span class="badge badge-pkg">📦 SHIGHRA DARSHAN</span></div>
+          <div class="tl-desc"><strong>Jyotirlinga #3</strong> — The crown jewel of Ujjain. Only south-facing (Dakshinamurti) Jyotirlinga in the world. Shighra (VIP) darshan skips the 2–3 hour regular queue. Temple complex has 3 levels — underground sanctum is the main linga. Massive, awe-inspiring experience.</div>
+          <div class="tl-tags"><span class="badge badge-gold">⭐ MUST-DO #1</span><span class="badge badge-time">2–2.5 hrs</span><span class="badge badge-pkg">VIP skip-queue included</span></div>
+        </div>
+        <div class="tl-item pkg">
+          <div class="tl-time">11:30 – 12:15</div>
+          <div class="tl-title">🏛️ Mahakal Lok <span class="badge badge-pkg">📦 PACKAGE</span></div>
+          <div class="tl-desc">Stunning 900-meter walkway corridor connecting the temple to the city. 108 beautifully carved pillars depicting stories of Lord Shiva. Murals, fountains, and selfie-worthy spots. Inaugurated by PM Modi. This is NEW and absolutely gorgeous.</div>
+          <div class="tl-tags"><span class="badge badge-gold">⭐ MUST-DO</span><span class="badge badge-time">45 min</span><span class="badge badge-tip">📸 Amazing photography</span></div>
+        </div>
+        <div class="tl-item pkg">
+          <div class="tl-time">12:15 – 12:45</div>
+          <div class="tl-title">⚡ Harsiddhi Mata Shaktipeeth <span class="badge badge-pkg">📦 PACKAGE</span></div>
+          <div class="tl-desc">One of the 51 Shaktipeeths. Mata's elbow fell here. Famous for two ornate deepmala (lamp pillars) lit during Navratri. Deeply sacred, powerful energy. 5-min walk from Mahakal.</div>
+          <div class="tl-tags"><span class="badge badge-gold">⭐ MUST-DO</span><span class="badge badge-time">30 min</span></div>
+        </div>
+        <div class="tl-item pkg">
+          <div class="tl-time">12:45 – 13:15</div>
+          <div class="tl-title">🐘 Bade Ganesh Mandir <span class="badge badge-pkg">📦 PACKAGE</span></div>
+          <div class="tl-desc">Massive Ganesh idol — one of the biggest in India. Adjacent is a beautiful reclining Shiva (Shayan Kuti). Right near Mahakal area. Quick but impactful visit.</div>
+          <div class="tl-tags"><span class="badge badge-time">30 min</span></div>
+        </div>
+        <div class="tl-item food">
+          <div class="tl-time">13:15 – 14:15</div>
+          <div class="tl-title">🍽️ Lunch <span class="badge badge-pkg">📦 INCLUDED</span></div>
+          <div class="tl-desc">Package lunch. Expect local vegetarian thali — dal, sabzi, roti, rice. Drink lots of water and nimbu-pani.</div>
+          <div class="tl-tags"><span class="badge badge-tip">Hydrate! ORS + 1L water</span></div>
+        </div>
+        <div class="tl-item rest">
+          <div class="tl-time">14:15 – 16:00</div>
+          <div class="tl-title">🛌 REST AT HOTEL (Non-negotiable!) <span class="badge badge-warn">🌡️ 44°C</span></div>
+          <div class="tl-desc">Peak heat hours. Do NOT step outside. AC room, nap, rehydrate, recharge. This is critical for your health. Use this time to sort temple offerings bag for evening.</div>
+        </div>
+
+        <!-- ADD-ONS in free slots -->
+        <div class="tl-item addon">
+          <div class="tl-time">16:00 – 16:30 — Free Slot</div>
+          <div class="tl-title">🛕 Mamleshwar Temple (Ujjain) <span class="badge badge-addon">✨ ADD-ON</span></div>
+          <div class="tl-desc">Upper part of the Mahakal linga — just 200m from Mahakal Temple. Quick, peaceful visit. Beautiful carvings. Many pilgrims miss this — don't skip it.</div>
+          <div class="tl-tags"><span class="badge badge-time">20–30 min</span><span class="badge badge-tip">200m from Mahakal — walk</span></div>
+        </div>
+        <div class="tl-item addon">
+          <div class="tl-time">16:30 – 17:00 — Free Slot</div>
+          <div class="tl-title">🛕 Dwarkadhish Gopal Mandir <span class="badge badge-addon">✨ ADD-ON</span></div>
+          <div class="tl-desc">Beautiful Krishna temple built by Bayabai Scindia. Maratha architectural style. Gorgeous stone carvings. Near the main market area — combine with a quick walk through shops.</div>
+          <div class="tl-tags"><span class="badge badge-time">30 min</span><span class="badge badge-tip">Near Gopal Mandir market</span></div>
+        </div>
+        <div class="tl-item addon">
+          <div class="tl-time">17:00 – 17:30 — Free Slot</div>
+          <div class="tl-title">🪐 Navagraha Mandir <span class="badge badge-addon">✨ ADD-ON</span></div>
+          <div class="tl-desc">Temple dedicated to 9 planets. Ujjain is the ancient Prime Meridian of India — Tropic of Cancer passes through it. Each planet has a dedicated shrine. Astrologically significant.</div>
+          <div class="tl-tags"><span class="badge badge-time">20–30 min</span><span class="badge badge-addon">Do if time permits</span></div>
+        </div>
+
+        <div class="tl-item pkg" style="border-color:rgba(245,158,11,0.3)">
+          <div class="tl-time">18:00 – 19:30 — Evening</div>
+          <div class="tl-title">🪔 Kshipra River Aarti (Ram Ghat) <span class="badge badge-pkg">📦 PACKAGE</span></div>
+          <div class="tl-desc"><strong>Magical evening aarti</strong> on the Shipra river at Ram Ghat. Bells, chanting, diyas floating on the water, temple lights reflecting off the river. This is where Kumbh Mela is held. Take a holy dip if you wish. Incredibly moving experience.</div>
+          <div class="tl-tags"><span class="badge badge-gold">⭐ MUST-DO</span><span class="badge badge-time">Aarti ~7 PM, reach by 6:30</span></div>
+        </div>
+        <div class="tl-item food">
+          <div class="tl-time">20:00 – 21:00</div>
+          <div class="tl-title">🍽️ Dinner <span class="badge badge-pkg">📦 INCLUDED</span></div>
+          <div class="tl-desc">Package dinner. After dinner, take a stroll near the Mahakal area — night market has shops selling rudraksha, Mahakal photos, religious items.</div>
+          <div class="tl-tags"><span class="badge badge-tip">🛍️ Browse temple shops after dinner</span></div>
+        </div>
+        <div class="tl-item rest">
+          <div class="tl-time">21:30 — Sleep</div>
+          <div class="tl-title">😴 Rest Well — Morning Temples Tomorrow</div>
+          <div class="tl-desc">Tomorrow starts with Kaal Bhairav and more temples. Good night's sleep needed.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══ DAY 2 — UJJAIN → INDORE ═══ -->
+    <div class="day-content" id="day2">
+      <div class="day-header">
+        <h3>🏛️ Day 2 — Ujjain Morning → Indore</h3>
+        <div class="intensity-row">Intensity: <div class="i-dots"><div class="i-dot hot"></div><div class="i-dot hot"></div><div class="i-dot hot"></div><div class="i-dot hot"></div><div class="i-dot hot"></div></div> Very Heavy</div>
+      </div>
+      <div class="timeline">
+        <!-- BHASMA AARTI OPTION -->
+        <div class="tl-item bhasma">
+          <div class="tl-time">⭐ 03:00 – 06:00 — IF BOOKED SEPARATELY</div>
+          <div class="tl-title">🔥 BHASMA AARTI <span class="badge badge-bhasma">🔥 BOOK SEPARATELY</span></div>
+          <div class="tl-desc"><strong>Once-in-a-lifetime experience.</strong> The Shiva linga is ritually bathed then smeared with bhasma (sacred ash from cremation ground). Powerful mantras, bells, deeply spiritual atmosphere. Pilgrims often weep from the intensity. If you've booked this, wake at 2:30 AM, reach temple by 3:00 AM. No phones inside sanctum. Wear simple cotton dhoti/kurta.</div>
+          <div class="tl-tags"><span class="badge badge-gold">⭐⭐⭐ TRIP HIGHLIGHT</span><span class="badge badge-time">4:00 AM – 6:00 AM</span><span class="badge badge-warn">Pre-book at shrimahakaleshwar.com</span></div>
+        </div>
+
+        <div class="tl-item rest">
+          <div class="tl-time">06:30 – 07:30</div>
+          <div class="tl-title">🏨 Freshen Up (post-Bhasma Aarti) or Wake Up</div>
+          <div class="tl-desc">If you did Bhasma Aarti: return to hotel, quick nap, shower. If not: normal wake-up and freshen up.</div>
+        </div>
+        <div class="tl-item food">
+          <div class="tl-time">07:30 – 08:00</div>
+          <div class="tl-title">🍽️ Breakfast <span class="badge badge-pkg">📦 INCLUDED</span></div>
+          <div class="tl-desc">Hotel breakfast. Try poha-jalebi if available — classic MP breakfast.</div>
+        </div>
+        <div class="tl-item pkg">
+          <div class="tl-time">08:00 – 08:40</div>
+          <div class="tl-title">🍷 Kaal Bhairav Mandir <span class="badge badge-pkg">📦 PACKAGE</span></div>
+          <div class="tl-desc"><strong>Unique temple where liquor is offered to the deity!</strong> The priest tilts a saucer of madira (liquor) against the idol's mouth and it disappears. One of the Ashtabhairav. Truly one-of-a-kind experience. The prasad here is… different! 😄</div>
+          <div class="tl-tags"><span class="badge badge-gold">⭐ MUST-DO</span><span class="badge badge-time">30–40 min</span><span class="badge badge-tip">🍷 Liquor as prasad!</span></div>
+        </div>
+        <div class="tl-item pkg">
+          <div class="tl-time">08:50 – 09:20</div>
+          <div class="tl-title">🛕 Mangalnath Temple <span class="badge badge-pkg">📦 PACKAGE</span></div>
+          <div class="tl-desc">Temple dedicated to Mars (Mangal Graha). Hilltop location with panoramic views of Ujjain. Important for those with Mangal dosha. Peaceful morning atmosphere.</div>
+          <div class="tl-tags"><span class="badge badge-time">30 min</span><span class="badge badge-tip">Hilltop views — great photos</span></div>
+        </div>
+        <div class="tl-item pkg">
+          <div class="tl-time">09:30 – 10:15</div>
+          <div class="tl-title">📚 Maharishi Sandipani Ashram <span class="badge badge-pkg">📦 PACKAGE</span></div>
+          <div class="tl-desc">Where Lord Krishna, Balram, and Sudama studied under Guru Sandipani. See the Gomti Kund (where Krishna washed his slate) and ancient stone tablets with numerals 1–100, said to be carved by Krishna himself. Deeply historic and peaceful.</div>
+          <div class="tl-tags"><span class="badge badge-gold">⭐ MUST-DO</span><span class="badge badge-time">45 min</span><span class="badge badge-tip">Free entry</span></div>
+        </div>
+        <div class="tl-item pkg">
+          <div class="tl-time">10:20 – 10:50</div>
+          <div class="tl-title">⚡ Gadhkalika Mata Shakti Peeth <span class="badge badge-pkg">📦 PACKAGE</span></div>
+          <div class="tl-desc">Ancient Shaktipeeth where the great poet Kalidasa is said to have received his literary genius from Goddess Kalika. The story goes: Kalidasa was an uneducated fool until Kalika Devi blessed him with supreme intellect and poetic genius.</div>
+          <div class="tl-tags"><span class="badge badge-time">30 min</span><span class="badge badge-tip">Kalidasa's divine blessing spot</span></div>
+        </div>
+
+        <!-- ADD-ONS before Indore transfer -->
+        <div class="tl-item addon">
+          <div class="tl-time">10:50 – 11:15 — Free Slot</div>
+          <div class="tl-title">🔭 Jantar Mantar (Vedha Shala) <span class="badge badge-addon">✨ ADD-ON</span></div>
+          <div class="tl-desc">One of five astronomical observatories by Maharaja Jai Singh II. Ancient sundials and instruments. Ujjain was the Prime Meridian of ancient India. Quick but fascinating visit. ₹15/person entry.</div>
+          <div class="tl-tags"><span class="badge badge-time">20–25 min</span><span class="badge badge-addon">Do if time permits</span><span class="badge badge-gold">₹15 entry</span></div>
+        </div>
+
+        <div class="tl-item travel">
+          <div class="tl-time">11:30 – 13:00</div>
+          <div class="tl-title">🚗 Transfer: Ujjain → Indore <span class="badge badge-pkg">📦 PACKAGE</span></div>
+          <div class="tl-desc">55 km highway drive (~1.5 hrs). Relax in car, nap if you did Bhasma Aarti. The Malwa plateau landscape is flat and agricultural.</div>
+          <div class="tl-tags"><span class="badge badge-time">1.5 hrs</span><span class="badge badge-pkg">Transfer included</span></div>
+        </div>
+        <div class="tl-item food">
+          <div class="tl-time">13:00 – 14:00</div>
+          <div class="tl-title">🍽️ Lunch + 🏨 Hotel Check-in (Indore) <span class="badge badge-pkg">📦 INCLUDED</span></div>
+          <div class="tl-desc">Check into Indore hotel. Lunch included. Welcome to India's food capital!</div>
+        </div>
+        <div class="tl-item rest">
+          <div class="tl-time">14:00 – 16:00</div>
+          <div class="tl-title">🛌 REST — Beat the Heat <span class="badge badge-warn">🌡️ Peak heat</span></div>
+          <div class="tl-desc">Mandatory rest. Rehydrate, nap, recharge. Evening is packed — Rajwada + temples + SARAFA BAZAAR!</div>
+        </div>
+        <div class="tl-item pkg">
+          <div class="tl-time">16:00 – 16:45</div>
+          <div class="tl-title">🏰 Rajwada Palace <span class="badge badge-pkg">📦 PACKAGE</span></div>
+          <div class="tl-desc">Historic 7-story Holkar-era palace in the heart of Indore. Mix of Mughal, Maratha and French architecture. The facade is stunning for photos. Bustling market area around it.</div>
+          <div class="tl-tags"><span class="badge badge-time">45 min</span><span class="badge badge-tip">📸 Great photo spot</span></div>
+        </div>
+        <div class="tl-item pkg">
+          <div class="tl-time">17:00 – 17:45</div>
+          <div class="tl-title">🐘 Khajrana Ganesh Temple <span class="badge badge-pkg">📦 PACKAGE</span></div>
+          <div class="tl-desc">Most famous temple in Indore. Idol installed by Ahilyabai Holkar. Known as a wish-fulfilling temple. Very popular, especially on Tuesdays and Saturdays. Evening is a good time — less crowded than morning.</div>
+          <div class="tl-tags"><span class="badge badge-time">45 min</span></div>
+        </div>
+        <div class="tl-item pkg">
+          <div class="tl-time">18:00 – 18:30</div>
+          <div class="tl-title">🛕 Annapurna Temple <span class="badge badge-pkg">📦 PACKAGE</span></div>
+          <div class="tl-desc">Replica of Madurai's Meenakshi Temple. Ornate South Indian gopuram architecture in the heart of Indore. Dedicated to Goddess Annapurna (food goddess — fitting for Indore!). Beautiful in evening light.</div>
+          <div class="tl-tags"><span class="badge badge-time">30 min</span></div>
+        </div>
+        <div class="tl-item rest">
+          <div class="tl-time">18:30 – 20:30</div>
+          <div class="tl-title">🏨 Return to Hotel, Freshen Up, Rest</div>
+          <div class="tl-desc">Freshen up before the MAIN EVENT. Sarafa Bazaar opens after 9 PM and goes until 2 AM. Come hungry. VERY hungry.</div>
+          <div class="tl-tags"><span class="badge badge-warn">⚠️ DON'T eat dinner — save stomach for Sarafa!</span></div>
+        </div>
+        <div class="tl-item pkg" style="border-color:rgba(245,158,11,0.3);background:rgba(245,158,11,0.04)">
+          <div class="tl-time">21:00 – 23:30+ — Night</div>
+          <div class="tl-title">🌃 SARAFA BAZAAR — Night Food Crawl! <span class="badge badge-pkg">📦 PACKAGE</span> <span class="badge badge-warn">Dinner Self-Paid</span></div>
+          <div class="tl-desc"><strong>India's most famous night food market!</strong> By day it's a jewelry market. After 9 PM, food stalls take over the entire street. The energy, flavors, and chaos are incredible. This is THE foodie highlight of your entire trip. Budget ₹200–400/person for a full crawl.</div>
+          <div class="tl-tags">
+            <span class="badge badge-gold">⭐⭐ TRIP HIGHLIGHT</span>
+            <span class="badge badge-time">Opens 9 PM → 2 AM</span>
+            <span class="badge badge-warn">₹200–400 self-paid</span>
+          </div>
+        </div>
+        <div class="tl-item rest">
+          <div class="tl-time">00:00 — Sleep</div>
+          <div class="tl-title">😴 Late Night — Sleep at Hotel</div>
+          <div class="tl-desc">Early start tomorrow for Omkareshwar. Set alarm for 5:00 AM.</div>
+          <div class="tl-tags"><span class="badge badge-warn">⏰ Alarm: 5:00 AM</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══ DAY 3 — OMKARESHWAR ═══ -->
+    <div class="day-content" id="day3">
+      <div class="day-header">
+        <h3>🔱 Day 3 — Omkareshwar + Mamleshwar + Departure</h3>
+        <div class="intensity-row">Intensity: <div class="i-dots"><div class="i-dot hot"></div><div class="i-dot hot"></div><div class="i-dot hot"></div><div class="i-dot hot"></div><div class="i-dot"></div></div> Heavy</div>
+      </div>
+      <div class="timeline">
+        <div class="tl-item travel">
+          <div class="tl-time">05:30 – 06:00</div>
+          <div class="tl-title">🌅 Wake Up, Pack, Check Out <span class="badge badge-pkg">📦 PACKAGE</span></div>
+          <div class="tl-desc">Early morning departure. Pack all bags — you won't return to this hotel. Keep luggage in the cab. Carry water, snacks, and sunscreen in your sling bag.</div>
+          <div class="tl-tags"><span class="badge badge-warn">Keep all luggage in cab</span></div>
+        </div>
+        <div class="tl-item travel">
+          <div class="tl-time">06:00 – 08:30</div>
+          <div class="tl-title">🚗 Drive: Indore → Omkareshwar <span class="badge badge-pkg">📦 PACKAGE</span></div>
+          <div class="tl-desc">~80 km via NH (~2.5 hrs). Scenic rural drive through Narmada valley. Nap in car — you were at Sarafa till midnight.</div>
+          <div class="tl-tags"><span class="badge badge-time">2.5 hrs</span></div>
+        </div>
+        <div class="tl-item food">
+          <div class="tl-time">En Route</div>
+          <div class="tl-title">🍽️ Breakfast <span class="badge badge-pkg">📦 INCLUDED</span></div>
+          <div class="tl-desc">Breakfast stop en route. Light and quick.</div>
+        </div>
+        <div class="tl-item pkg" style="border-color:rgba(245,158,11,0.3)">
+          <div class="tl-time">09:00 – 11:00</div>
+          <div class="tl-title">🔱 Omkareshwar Jyotirlinga <span class="badge badge-pkg">📦 SHIGHRA DARSHAN</span></div>
+          <div class="tl-desc"><strong>Jyotirlinga #4</strong> on Mandhata island in the Narmada River. The island is shaped like the Om symbol (ॐ) when viewed from above. Cross the bridge to the island. Two temples — Omkareshwar (island) and Amareshwar (south bank). Shighra darshan skips the queue. The Narmada flowing around the island is mesmerizing.</div>
+          <div class="tl-tags"><span class="badge badge-gold">⭐ MUST-DO #2</span><span class="badge badge-time">2 hrs</span><span class="badge badge-pkg">VIP skip-queue included</span></div>
+        </div>
+        <div class="tl-item pkg">
+          <div class="tl-time">11:00 – 11:45</div>
+          <div class="tl-title">🛕 Mamleshwar Temple (Omkareshwar) <span class="badge badge-pkg">📦 PACKAGE</span></div>
+          <div class="tl-desc">Companion temple to Omkareshwar on the south bank of Narmada. Some scholars consider this the actual 4th Jyotirlinga. Peaceful, less crowded. Beautiful river views from here.</div>
+          <div class="tl-tags"><span class="badge badge-time">45 min</span></div>
+        </div>
+        <div class="tl-item pkg">
+          <div class="tl-time">11:45 – 12:30</div>
+          <div class="tl-title">🌊 Narmada Ghat <span class="badge badge-pkg">📦 PACKAGE</span></div>
+          <div class="tl-desc">Walk along the sacred Narmada ghats. Take a holy dip if you wish. The river is considered even more sacred than the Ganga by many traditions. Narmada Parikrama is a famous pilgrimage. Beautiful photography spot.</div>
+          <div class="tl-tags"><span class="badge badge-time">30–45 min</span><span class="badge badge-tip">📸 Stunning photography</span></div>
+        </div>
+        <div class="tl-item food">
+          <div class="tl-time">12:30 – 13:15</div>
+          <div class="tl-title">🍽️ Lunch <span class="badge badge-pkg">📦 INCLUDED</span></div>
+          <div class="tl-desc">Lunch at Omkareshwar. Simple pilgrim town food — dal, rice, roti, sabzi.</div>
+        </div>
+        <div class="tl-item travel" style="border-color:rgba(220,38,38,0.3)">
+          <div class="tl-time">13:30 – 16:30 ⚠️ TIGHT</div>
+          <div class="tl-title">🚗 Return to Ujjain <span class="badge badge-pkg">📦 PACKAGE</span> <span class="badge badge-warn">⚠️ CRITICAL TIMING</span></div>
+          <div class="tl-desc"><strong>Omkareshwar → Ujjain = ~140 km (3–3.5 hrs).</strong> You MUST leave by 1:30 PM latest to reach Ujjain station by 5 PM. Confirm with operator that return is to UJJAIN (not Indore). Your train departs at 17:55!</div>
+          <div class="tl-tags"><span class="badge badge-warn">Must leave by 1:30 PM!</span><span class="badge badge-time">3–3.5 hrs drive</span></div>
+        </div>
+        <div class="tl-item rest">
+          <div class="tl-time">16:30 – 17:00</div>
+          <div class="tl-title">🚉 Reach Ujjain Junction</div>
+          <div class="tl-desc">Freshen up at station. Buy snacks, water, and dinner for the overnight return journey. Quick shopping for any last-minute souvenirs at station shops.</div>
+          <div class="tl-tags"><span class="badge badge-tip">Buy Mawa Bati sweets as souvenir!</span></div>
+        </div>
+        <div class="tl-item highlight">
+          <div class="tl-time">17:55 — Board Train</div>
+          <div class="tl-title">🚂 INDB DAUND EXP (22944) → Pune <span class="badge badge-gold">PNR: 8247844113</span></div>
+          <div class="tl-desc">Return journey: 14h 55m. Arrive Pune 08:50 Sun. Relax, reflect. You've covered 2 Jyotirlingas, 15+ temples, India's best street food, and collected infinite blessings. 🙏</div>
+          <div class="tl-tags"><span class="badge badge-time">14h 55m</span><span class="badge badge-tip">Arrive Pune: Sun 08:50 AM</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Priority Matrix ═══ -->
+<section class="section" id="priority">
+  <div class="container">
+    <div class="section-label">🎯 Activity Priority Matrix</div>
+    <h2 class="section-title">What to Prioritize</h2>
+    <p class="section-desc">Every activity ranked across 5 tiers — at a glance. Exact timing and day included.</p>
+
+    <!-- ROW 1: 2 hero cards -->
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:18px;margin-bottom:18px" class="reveal">
+
+      <!-- MUST-DO Card -->
+      <div class="card" style="border-color:rgba(245,158,11,0.3);border-top:3px solid var(--gold-400);padding:0;overflow:hidden">
+        <div style="padding:18px 22px 12px;background:linear-gradient(135deg,rgba(245,158,11,0.08),transparent)">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px">
+            <h4 style="font-size:1rem;font-weight:700;color:var(--gold-300);display:flex;align-items:center;gap:8px">⭐ MUST-DO</h4>
+            <span style="font-size:.7rem;color:var(--gold-500);background:rgba(245,158,11,0.1);padding:2px 10px;border-radius:12px;font-weight:600">7 items</span>
+          </div>
+          <p style="font-size:.74rem;color:var(--text-dim)">Non-negotiable — these define your trip</p>
+        </div>
+        <div style="padding:0 18px 18px">
+          <div style="display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid rgba(42,42,74,0.4)">
+            <span style="min-width:24px;height:24px;border-radius:6px;background:rgba(245,158,11,0.15);color:var(--gold-400);display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;flex-shrink:0">1</span>
+            <div style="flex:1;min-width:0"><div style="font-size:.84rem;font-weight:500">🔱 Mahakaleshwar Jyotirlinga <span class="badge badge-pkg" style="vertical-align:middle">📦</span></div><div style="font-size:.7rem;color:var(--gold-400);margin-top:1px">Day 1 · 9:00–11:30 AM · Shighra VIP</div></div>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid rgba(42,42,74,0.4)">
+            <span style="min-width:24px;height:24px;border-radius:6px;background:rgba(234,88,12,0.15);color:var(--saffron-light);display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;flex-shrink:0">2</span>
+            <div style="flex:1;min-width:0"><div style="font-size:.84rem;font-weight:500">🔥 Bhasma Aarti <span class="badge badge-bhasma" style="vertical-align:middle">BOOK SEPARATELY</span></div><div style="font-size:.7rem;color:var(--gold-400);margin-top:1px">Day 2 · 4:00–6:00 AM · Pre-book NOW</div></div>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid rgba(42,42,74,0.4)">
+            <span style="min-width:24px;height:24px;border-radius:6px;background:rgba(245,158,11,0.15);color:var(--gold-400);display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;flex-shrink:0">3</span>
+            <div style="flex:1;min-width:0"><div style="font-size:.84rem;font-weight:500">🔱 Omkareshwar Jyotirlinga <span class="badge badge-pkg" style="vertical-align:middle">📦</span></div><div style="font-size:.7rem;color:var(--gold-400);margin-top:1px">Day 3 · 9:00–11:00 AM · OM-shaped island</div></div>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid rgba(42,42,74,0.4)">
+            <span style="min-width:24px;height:24px;border-radius:6px;background:rgba(245,158,11,0.15);color:var(--gold-400);display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;flex-shrink:0">4</span>
+            <div style="flex:1;min-width:0"><div style="font-size:.84rem;font-weight:500">🪔 Kshipra River Aarti <span class="badge badge-pkg" style="vertical-align:middle">📦</span></div><div style="font-size:.7rem;color:var(--gold-400);margin-top:1px">Day 1 · 6:30–7:30 PM · Ram Ghat</div></div>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid rgba(42,42,74,0.4)">
+            <span style="min-width:24px;height:24px;border-radius:6px;background:rgba(245,158,11,0.15);color:var(--gold-400);display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;flex-shrink:0">5</span>
+            <div style="flex:1;min-width:0"><div style="font-size:.84rem;font-weight:500">🌃 Sarafa Bazaar Food Crawl <span class="badge badge-pkg" style="vertical-align:middle">📦</span></div><div style="font-size:.7rem;color:var(--gold-400);margin-top:1px">Day 2 · 9 PM–midnight · ₹200-400 self-paid</div></div>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid rgba(42,42,74,0.4)">
+            <span style="min-width:24px;height:24px;border-radius:6px;background:rgba(245,158,11,0.15);color:var(--gold-400);display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;flex-shrink:0">6</span>
+            <div style="flex:1;min-width:0"><div style="font-size:.84rem;font-weight:500">🏛️ Mahakal Lok <span class="badge badge-pkg" style="vertical-align:middle">📦</span></div><div style="font-size:.7rem;color:var(--gold-400);margin-top:1px">Day 1 · 11:30 AM · 900m corridor, 108 pillars</div></div>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;padding:10px 0">
+            <span style="min-width:24px;height:24px;border-radius:6px;background:rgba(245,158,11,0.15);color:var(--gold-400);display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;flex-shrink:0">7</span>
+            <div style="flex:1;min-width:0"><div style="font-size:.84rem;font-weight:500">🍷 Kaal Bhairav Mandir <span class="badge badge-pkg" style="vertical-align:middle">📦</span></div><div style="font-size:.7rem;color:var(--gold-400);margin-top:1px">Day 2 · 8:00 AM · Liquor as prasad!</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TIMING INTELLIGENCE Card -->
+      <div class="card" style="border-color:rgba(234,88,12,0.3);border-top:3px solid var(--saffron-light);padding:0;overflow:hidden">
+        <div style="padding:18px 22px 12px;background:linear-gradient(135deg,rgba(234,88,12,0.08),transparent)">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px">
+            <h4 style="font-size:1rem;font-weight:700;color:var(--saffron-light);display:flex;align-items:center;gap:8px">⏰ TIMING INTEL</h4>
+            <span style="font-size:.7rem;color:var(--saffron);background:rgba(234,88,12,0.1);padding:2px 10px;border-radius:12px;font-weight:600">6 items</span>
+          </div>
+          <p style="font-size:.74rem;color:var(--text-dim)">When matters most — miss the window, miss the experience</p>
+        </div>
+        <div style="padding:0 18px 18px">
+          <div style="display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid rgba(42,42,74,0.4)">
+            <span style="min-width:24px;height:24px;border-radius:6px;background:rgba(234,88,12,0.12);color:var(--saffron-light);display:flex;align-items:center;justify-content:center;font-size:.8rem;flex-shrink:0">⏰</span>
+            <div style="flex:1;min-width:0"><div style="font-size:.84rem;font-weight:500">🔥 Bhasma Aarti</div><div style="font-size:.7rem;color:var(--saffron-light);margin-top:1px">ONLY 4:00 AM · Reach by 3:00 AM · Must pre-book</div></div>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid rgba(42,42,74,0.4)">
+            <span style="min-width:24px;height:24px;border-radius:6px;background:rgba(234,88,12,0.12);color:var(--saffron-light);display:flex;align-items:center;justify-content:center;font-size:.8rem;flex-shrink:0">⏰</span>
+            <div style="flex:1;min-width:0"><div style="font-size:.84rem;font-weight:500">🪔 Ram Ghat Aarti</div><div style="font-size:.7rem;color:var(--saffron-light);margin-top:1px">Starts ~7 PM daily · Reach by 6:30 PM for best spot</div></div>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid rgba(42,42,74,0.4)">
+            <span style="min-width:24px;height:24px;border-radius:6px;background:rgba(234,88,12,0.12);color:var(--saffron-light);display:flex;align-items:center;justify-content:center;font-size:.8rem;flex-shrink:0">⏰</span>
+            <div style="flex:1;min-width:0"><div style="font-size:.84rem;font-weight:500">🌃 Sarafa Bazaar</div><div style="font-size:.7rem;color:var(--saffron-light);margin-top:1px">Opens ONLY 9 PM · Peak 10-11 PM · Until 2 AM</div></div>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid rgba(42,42,74,0.4)">
+            <span style="min-width:24px;height:24px;border-radius:6px;background:rgba(234,88,12,0.12);color:var(--saffron-light);display:flex;align-items:center;justify-content:center;font-size:.8rem;flex-shrink:0">⏰</span>
+            <div style="flex:1;min-width:0"><div style="font-size:.84rem;font-weight:500">🔱 Mahakaleshwar (regular)</div><div style="font-size:.7rem;color:var(--saffron-light);margin-top:1px">Best before 10 AM · Shighra anytime but AM is peaceful</div></div>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid rgba(42,42,74,0.4)">
+            <span style="min-width:24px;height:24px;border-radius:6px;background:rgba(220,38,38,0.12);color:var(--vermillion);display:flex;align-items:center;justify-content:center;font-size:.8rem;flex-shrink:0">🌡️</span>
+            <div style="flex:1;min-width:0"><div style="font-size:.84rem;font-weight:500">All temples in June</div><div style="font-size:.7rem;color:var(--vermillion);margin-top:1px">Safe: 6–11 AM & 4–7 PM ONLY · 11 AM–4 PM = 44°C danger</div></div>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;padding:10px 0">
+            <span style="min-width:24px;height:24px;border-radius:6px;background:rgba(220,38,38,0.12);color:var(--vermillion);display:flex;align-items:center;justify-content:center;font-size:.8rem;flex-shrink:0">⚠️</span>
+            <div style="flex:1;min-width:0"><div style="font-size:.84rem;font-weight:500">Day 3 Departure</div><div style="font-size:.7rem;color:var(--vermillion);margin-top:1px">Train 17:55 from Ujjain · Leave Omkareshwar by 1:30 PM!</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ROW 2: 3 compact cards -->
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px" class="reveal">
+
+      <!-- GOOD-TO-DO Card -->
+      <div class="card" style="border-color:rgba(59,130,246,0.2);border-top:3px solid var(--blue);padding:0;overflow:hidden">
+        <div style="padding:16px 20px 10px;background:linear-gradient(135deg,rgba(59,130,246,0.06),transparent)">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:2px">
+            <h4 style="font-size:.92rem;font-weight:700;color:var(--blue);display:flex;align-items:center;gap:6px">👍 GOOD-TO-DO</h4>
+            <span style="font-size:.65rem;color:var(--blue);background:rgba(59,130,246,0.1);padding:2px 8px;border-radius:10px;font-weight:600">7 items</span>
+          </div>
+          <p style="font-size:.7rem;color:var(--text-dim)">In package — important & enriching</p>
+        </div>
+        <div style="padding:0 16px 16px">
+          <div style="padding:8px 0;border-bottom:1px solid rgba(42,42,74,0.3);font-size:.82rem"><span style="font-weight:500">⚡ Harsiddhi Shaktipeeth</span><div style="font-size:.68rem;color:var(--blue);margin-top:1px">Day 1 · 12:15 PM · 📦</div></div>
+          <div style="padding:8px 0;border-bottom:1px solid rgba(42,42,74,0.3);font-size:.82rem"><span style="font-weight:500">📚 Sandipani Ashram</span><div style="font-size:.68rem;color:var(--blue);margin-top:1px">Day 2 · 9:30 AM · Krishna's school · 📦</div></div>
+          <div style="padding:8px 0;border-bottom:1px solid rgba(42,42,74,0.3);font-size:.82rem"><span style="font-weight:500">⚡ Gadhkalika Shakti Peeth</span><div style="font-size:.68rem;color:var(--blue);margin-top:1px">Day 2 · 10:20 AM · Kalidasa's spot · 📦</div></div>
+          <div style="padding:8px 0;border-bottom:1px solid rgba(42,42,74,0.3);font-size:.82rem"><span style="font-weight:500">🐘 Bade Ganesh Mandir</span><div style="font-size:.68rem;color:var(--blue);margin-top:1px">Day 1 · 12:45 PM · Giant idol · 📦</div></div>
+          <div style="padding:8px 0;border-bottom:1px solid rgba(42,42,74,0.3);font-size:.82rem"><span style="font-weight:500">🏰 Rajwada Palace</span><div style="font-size:.68rem;color:var(--blue);margin-top:1px">Day 2 · 4:00 PM · Historic Holkar palace · 📦</div></div>
+          <div style="padding:8px 0;border-bottom:1px solid rgba(42,42,74,0.3);font-size:.82rem"><span style="font-weight:500">🐘 Khajrana Ganesh</span><div style="font-size:.68rem;color:var(--blue);margin-top:1px">Day 2 · 5:00 PM · Wish-fulfilling · 📦</div></div>
+          <div style="padding:8px 0;font-size:.82rem"><span style="font-weight:500">🌊 Narmada Ghat</span><div style="font-size:.68rem;color:var(--blue);margin-top:1px">Day 3 · 11:45 AM · Holy dip · 📦</div></div>
+        </div>
+      </div>
+
+      <!-- DO-IF-TIME Card -->
+      <div class="card" style="border-color:rgba(168,85,247,0.2);border-top:3px solid var(--purple);padding:0;overflow:hidden">
+        <div style="padding:16px 20px 10px;background:linear-gradient(135deg,rgba(168,85,247,0.06),transparent)">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:2px">
+            <h4 style="font-size:.92rem;font-weight:700;color:var(--purple);display:flex;align-items:center;gap:6px">🕐 IF TIME PERMITS</h4>
+            <span style="font-size:.65rem;color:var(--purple);background:rgba(168,85,247,0.1);padding:2px 8px;border-radius:10px;font-weight:600">5 add-ons</span>
+          </div>
+          <p style="font-size:.7rem;color:var(--text-dim)">Not in package — do in free slots</p>
+        </div>
+        <div style="padding:0 16px 16px">
+          <div style="padding:8px 0;border-bottom:1px solid rgba(42,42,74,0.3);font-size:.82rem"><span style="font-weight:500">🛕 Mamleshwar (Ujjain)</span><div style="font-size:.68rem;color:var(--purple);margin-top:1px">Day 1 · 4:00 PM · 200m from Mahakal · ✨</div></div>
+          <div style="padding:8px 0;border-bottom:1px solid rgba(42,42,74,0.3);font-size:.82rem"><span style="font-weight:500">🛕 Dwarkadhish Gopal Mandir</span><div style="font-size:.68rem;color:var(--purple);margin-top:1px">Day 1 · 4:30 PM · Krishna temple, Maratha style · ✨</div></div>
+          <div style="padding:8px 0;border-bottom:1px solid rgba(42,42,74,0.3);font-size:.82rem"><span style="font-weight:500">🪐 Navagraha Mandir</span><div style="font-size:.68rem;color:var(--purple);margin-top:1px">Day 1 · 5:00 PM · Nine planets · ✨</div></div>
+          <div style="padding:8px 0;border-bottom:1px solid rgba(42,42,74,0.3);font-size:.82rem"><span style="font-weight:500">🔭 Jantar Mantar</span><div style="font-size:.68rem;color:var(--purple);margin-top:1px">Day 2 · 10:50 AM · Observatory, ₹15 entry · ✨</div></div>
+          <div style="padding:8px 0;font-size:.82rem"><span style="font-weight:500">🛕 Mangalnath Temple</span><div style="font-size:.68rem;color:var(--purple);margin-top:1px">Day 2 · 8:50 AM · Already in pkg but enjoy it · 📦</div></div>
+        </div>
+      </div>
+
+      <!-- SKIP Card -->
+      <div class="card" style="border-color:rgba(107,101,96,0.2);border-top:3px solid var(--text-dim);padding:0;overflow:hidden;opacity:.85">
+        <div style="padding:16px 20px 10px;background:linear-gradient(135deg,rgba(107,101,96,0.06),transparent)">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:2px">
+            <h4 style="font-size:.92rem;font-weight:700;color:var(--text-dim);display:flex;align-items:center;gap:6px">⏭️ SKIP</h4>
+            <span style="font-size:.65rem;color:var(--text-dim);background:rgba(107,101,96,0.1);padding:2px 8px;border-radius:10px;font-weight:600">5 items</span>
+          </div>
+          <p style="font-size:.7rem;color:var(--text-dim)">Low priority — don't waste time on these</p>
+        </div>
+        <div style="padding:0 16px 16px">
+          <div style="padding:8px 0;border-bottom:1px solid rgba(42,42,74,0.3);font-size:.82rem;color:var(--text-secondary)"><span style="font-weight:500">🛕 ISKCON Temple</span><div style="font-size:.68rem;color:var(--text-dim);margin-top:1px">❌ Similar to ISKCON Pune — skip</div></div>
+          <div style="padding:8px 0;border-bottom:1px solid rgba(42,42,74,0.3);font-size:.82rem;color:var(--text-secondary)"><span style="font-weight:500">🛕 Char Dham Temple</span><div style="font-size:.68rem;color:var(--text-dim);margin-top:1px">❌ Replica, not authentic — skip</div></div>
+          <div style="padding:8px 0;border-bottom:1px solid rgba(42,42,74,0.3);font-size:.82rem;color:var(--text-secondary)"><span style="font-weight:500">🛕 Ashtvinayak Mandir</span><div style="font-size:.68rem;color:var(--text-dim);margin-top:1px">❌ Do Ashtavinayak from Pune instead</div></div>
+          <div style="padding:8px 0;border-bottom:1px solid rgba(42,42,74,0.3);font-size:.82rem;color:var(--text-secondary)"><span style="font-weight:500">🇮🇳 Bharat Mata Temple</span><div style="font-size:.68rem;color:var(--text-dim);margin-top:1px">❌ Concept temple — lowest priority</div></div>
+          <div style="padding:8px 0;font-size:.82rem;color:var(--text-secondary)"><span style="font-weight:500">🛕 Annapurna Temple (Indore)</span><div style="font-size:.68rem;color:var(--text-dim);margin-top:1px">📦 In package — but don't fuss if skipped</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- ═══ Route Flow ═══ -->
+<section class="section" id="route">
+  <div class="container">
+    <div class="section-label">🗺️ Route Logic</div>
+    <h2 class="section-title">Journey Flow</h2>
+    <p class="section-desc">Your complete movement pattern across 3 cities. Package handles all transfers.</p>
+    <div class="card reveal">
+      <h4 style="font-size:.85rem;color:var(--gold-400);margin-bottom:18px">Complete Trip Route</h4>
+      <div class="route-flow">
+        <div class="route-node start"><div class="r-icon">🏠</div><div class="r-name">Pune Jn</div><div class="r-day">Wed 15:33</div></div>
+        <div class="route-arrow"><span>→→</span><span class="dist">🚂 14h 52m</span></div>
+        <div class="route-node hl"><div class="r-icon">🔱</div><div class="r-name">Ujjain</div><div class="r-day">Day 1 + Day 2 AM</div></div>
+        <div class="route-arrow"><span>→→</span><span class="dist">🚗 55 km</span></div>
+        <div class="route-node hl"><div class="r-icon">🍽️</div><div class="r-name">Indore</div><div class="r-day">Day 2 PM + Night</div></div>
+        <div class="route-arrow"><span>→→</span><span class="dist">🚗 80 km</span></div>
+        <div class="route-node hl"><div class="r-icon">🔱</div><div class="r-name">Omkareshwar</div><div class="r-day">Day 3 Morning</div></div>
+        <div class="route-arrow"><span>→→</span><span class="dist">🚗 140 km</span></div>
+        <div class="route-node"><div class="r-icon">🚉</div><div class="r-name">Ujjain Jn</div><div class="r-day">Day 3, 5 PM</div></div>
+        <div class="route-arrow"><span>→→</span><span class="dist">🚂 14h 55m</span></div>
+        <div class="route-node end"><div class="r-icon">🏠</div><div class="r-name">Pune Jn</div><div class="r-day">Sun 08:50</div></div>
+      </div>
+      <p style="text-align:center;font-size:.78rem;color:var(--text-dim);margin-top:12px">Total road distance: ~275 km | All transfers in package cab | Total train: ~30 hours</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Budget ═══ -->
+<section class="section" id="budget">
+  <div class="container">
+    <div class="section-label">💰 Budget Breakdown</div>
+    <h2 class="section-title">What It'll Cost</h2>
+    <p class="section-desc">Per person total estimate. Package covers the bulk. Only extras are minimal.</p>
+    <div class="budget-total reveal">
+      <div style="font-size:.78rem;color:var(--text-dim);margin-bottom:6px">ESTIMATED TOTAL PER PERSON (excl. train tickets)</div>
+      <div class="amount">₹5,500 – ₹7,000</div>
+      <div class="sub">Package ₹4,500 + extras ₹1,000–₹2,500</div>
+      <div class="note">Train tickets already booked. Package covers hotel, meals, transport, VIP darshan.</div>
+    </div>
+    <div class="budget-grid reveal">
+      <div class="card">
+        <h4 style="font-size:.95rem;margin-bottom:18px;color:var(--gold-300)">Expense Categories</h4>
+        <div class="b-bar-group"><div class="b-bar-label"><span class="cat">📦 Tour Package (all-inclusive)</span><span class="amt">₹4,500</span></div><div class="b-bar-track"><div class="b-bar-fill b-fill-pkg" data-width="85"></div></div></div>
+        <div class="b-bar-group"><div class="b-bar-label"><span class="cat">🌃 Sarafa Bazaar Dinner (self-paid)</span><span class="amt">₹200–400</span></div><div class="b-bar-track"><div class="b-bar-fill b-fill-food" data-width="20"></div></div></div>
+        <div class="b-bar-group"><div class="b-bar-label"><span class="cat">🚗 Add-on autos/transport</span><span class="amt">₹100–300</span></div><div class="b-bar-track"><div class="b-bar-fill b-fill-extra" data-width="12"></div></div></div>
+        <div class="b-bar-group"><div class="b-bar-label"><span class="cat">🛍️ Shopping & Souvenirs</span><span class="amt">₹500–1,500</span></div><div class="b-bar-track"><div class="b-bar-fill b-fill-shop" data-width="35"></div></div></div>
+        <div class="b-bar-group"><div class="b-bar-label"><span class="cat">🧃 Misc (water, ORS, tips, snacks)</span><span class="amt">₹200–400</span></div><div class="b-bar-track"><div class="b-bar-fill b-fill-misc" data-width="15"></div></div></div>
+      </div>
+      <div class="card">
+        <h4 style="font-size:.95rem;margin-bottom:14px;color:var(--gold-300)">💡 What's NOT in Package Cost</h4>
+        <ul style="list-style:none;padding:0">
+          <li style="font-size:.84rem;color:var(--text-secondary);padding:7px 0;border-bottom:1px solid rgba(42,42,74,0.4);display:flex;gap:8px"><span style="color:var(--saffron-light)">→</span> Sarafa Bazaar dinner: ₹200–400 (worth every rupee)</li>
+          <li style="font-size:.84rem;color:var(--text-secondary);padding:7px 0;border-bottom:1px solid rgba(42,42,74,0.4);display:flex;gap:8px"><span style="color:var(--saffron-light)">→</span> Add-on temple autos (Day 1 PM): ₹60–150</li>
+          <li style="font-size:.84rem;color:var(--text-secondary);padding:7px 0;border-bottom:1px solid rgba(42,42,74,0.4);display:flex;gap:8px"><span style="color:var(--saffron-light)">→</span> Shopping: Mawa Bati (₹300–500), Rudraksha (₹200–800)</li>
+          <li style="font-size:.84rem;color:var(--text-secondary);padding:7px 0;border-bottom:1px solid rgba(42,42,74,0.4);display:flex;gap:8px"><span style="color:var(--saffron-light)">→</span> Temple dakshina/donations: ₹100–300</li>
+          <li style="font-size:.84rem;color:var(--text-secondary);padding:7px 0;border-bottom:1px solid rgba(42,42,74,0.4);display:flex;gap:8px"><span style="color:var(--saffron-light)">→</span> Train food (buy on IRCTC eCatering): ₹100–200</li>
+          <li style="font-size:.84rem;color:var(--text-secondary);padding:7px 0;display:flex;gap:8px"><span style="color:var(--saffron-light)">→</span> ORS, water bottles, sunscreen: ₹100–200</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Food ═══ -->
+<section class="section" id="food">
+  <div class="container">
+    <div class="section-label">🍽️ Food Guide</div>
+    <h2 class="section-title">What to Eat & Where</h2>
+    <p class="section-desc">Most meals are in the package. Sarafa Bazaar is the foodie highlight — here's what to target.</p>
+    <div class="food-grid reveal">
+      <div class="food-card" style="border-color:rgba(245,158,11,0.25)">
+        <h4>🌃 Sarafa Bazaar Must-Try (Day 2 Night)</h4>
+        <div class="sub-type">India's #1 Night Street Food Market — PRIORITIZE THESE</div>
+        <div class="f-item"><div><div class="dish">🌽 Bhutte ka Kees</div><div class="dish-note">Grated corn + milk + spices — MP's SIGNATURE dish</div></div><div class="price">₹40–60</div></div>
+        <div class="f-item"><div><div class="dish">🍟 Garadu</div><div class="dish-note">Crispy fried yam + chaat masala + lemon. Addictive.</div></div><div class="price">₹30–50</div></div>
+        <div class="f-item"><div><div class="dish">🥔 Khopra Patties</div><div class="dish-note">Coconut-stuffed potato balls with tamarind chutney</div></div><div class="price">₹30</div></div>
+        <div class="f-item"><div><div class="dish">🫕 Joshi Dahi Bada</div><div class="dish-note">Famous for theatrical, rhythmic serving style. Insta-worthy.</div></div><div class="price">₹40</div></div>
+        <div class="f-item"><div><div class="dish">🧇 Giant Jalebi</div><div class="dish-note">Oversized, hot, crispy. Nothing like what you get in Pune.</div></div><div class="price">₹30</div></div>
+        <div class="f-item"><div><div class="dish">🌭 Johny Hot Dog</div><div class="dish-note">Legendary VEG hot dog at Chappan Dukan. Visit before Sarafa.</div></div><div class="price">₹50</div></div>
+        <div class="f-item"><div><div class="dish">🍦 Sitafal Kulfi</div><div class="dish-note">Custard apple ice cream. Seasonal and divine.</div></div><div class="price">₹40</div></div>
+      </div>
+      <div class="food-card">
+        <h4>🌅 MP Breakfast & Meals</h4>
+        <div class="sub-type">Classic Malwa Region Cuisine (Included in Package)</div>
+        <div class="f-item"><div><div class="dish">🥣 Poha-Jalebi</div><div class="dish-note">THE iconic MP breakfast. Flattened rice + sev + hot jalebi.</div></div><div class="price">₹30–50</div></div>
+        <div class="f-item"><div><div class="dish">🥘 Dal Bafla</div><div class="dish-note">MP's signature dish. Baked wheat balls + dal + ghee. Hearty.</div></div><div class="price">₹80–120</div></div>
+        <div class="f-item"><div><div class="dish">🍛 Malwa Thali</div><div class="dish-note">Complete meal: dal, sabzi, roti, rice, papad, chutney, sweet.</div></div><div class="price">₹120–200</div></div>
+        <div class="f-item"><div><div class="dish">🥧 Kachori-Sabzi</div><div class="dish-note">Crispy dal-stuffed kachori + spicy aloo sabzi. Breakfast or snack.</div></div><div class="price">₹40–60</div></div>
+      </div>
+      <div class="food-card">
+        <h4>🍬 Souvenirs to Buy & Carry Home</h4>
+        <div class="sub-type">Edible Gifts from MP</div>
+        <div class="f-item"><div><div class="dish">🍩 Mawa Bati</div><div class="dish-note">Ujjain's famous sweet. BUY THIS — best souvenir for family!</div></div><div class="price">₹300–500/kg</div></div>
+        <div class="f-item"><div><div class="dish">🥜 Ratlami Sev (Namkeen)</div><div class="dish-note">Famous spicy sev from nearby Ratlam. Crunchy, addictive.</div></div><div class="price">₹200–350/kg</div></div>
+        <div class="f-item"><div><div class="dish">🍮 Pedha / Kalakand</div><div class="dish-note">Milk sweets from Mahakal temple area shops.</div></div><div class="price">₹400–600/kg</div></div>
+        <div class="f-item"><div><div class="dish">🫖 Indori Namkeen variety pack</div><div class="dish-note">Buy from Om Namkeen, Indore. Multiple flavors.</div></div><div class="price">₹150–300</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Packing & Organization ═══ -->
+<section class="section" id="packing">
+  <div class="container">
+    <div class="section-label">🎒 Packing & Organization</div>
+    <h2 class="section-title">Complete Checklist</h2>
+    <p class="section-desc">Optimized for 3-day spiritual trip in extreme June heat. One backpack + one sling bag. Click items to check them off.</p>
+
+    <div class="pack-progress reveal">
+      <span style="font-size:.84rem;color:var(--text-secondary)">Packing Progress:</span>
+      <div class="pp-bar"><div class="pp-fill" id="ppFill"></div></div>
+      <span class="pp-text" id="ppText">0 / 0</span>
+    </div>
+
+    <div class="pack-grid reveal">
+      <div class="pack-cat">
+        <h4>👕 Clothing (Extreme Heat + Temples)</h4>
+        <div class="pk-item" onclick="togglePk(this)"><div class="pk-box">✓</div><span class="pk-text">3× light cotton kurta / T-shirts (white/light colors)</span></div>
+        <div class="pk-note">Light colors reflect heat. No dark/synthetic — you'll cook.</div>
+        <div class="pk-item" onclick="togglePk(this)"><div class="pk-box">✓</div><span class="pk-text">2× comfortable cotton pants / pajamas</span></div>
+        <div class="pk-item" onclick="togglePk(this)"><div class="pk-box">✓</div><span class="pk-text">1× dhoti / lungi (for Bhasma Aarti — simple dress required)</span></div>
+        <div class="pk-note">Temple code: simple cotton only. No jeans in inner sanctum.</div>
+        <div class="pk-item" onclick="togglePk(this)"><div class="pk-box">✓</div><span class="pk-text">3× undergarments</span></div>
+        <div class="pk-item" onclick="togglePk(this)"><div class="pk-box">✓</div><span class="pk-text">1× easy slip-on sandals / chappals</span></div>
+        <div class="pk-note">You'll remove footwear at 15+ temples. Easy slip-on = lifesaver.</div>
+        <div class="pk-item" onclick="togglePk(this)"><div class="pk-box">✓</div><span class="pk-text">1× small gamcha / towel</span></div>
+        <div class="pk-item" onclick="togglePk(this)"><div class="pk-box">✓</div><span class="pk-text">1× cotton cap or hat (sun protection)</span></div>
+      </div>
+
+      <div class="pack-cat">
+        <h4>📄 Documents & Money</h4>
+        <div class="pk-item" onclick="togglePk(this)"><div class="pk-box">✓</div><span class="pk-text">Aadhaar Card / Govt ID (original + photocopy)</span></div>
+        <div class="pk-item" onclick="togglePk(this)"><div class="pk-box">✓</div><span class="pk-text">Train tickets printout (BOTH PNRs)</span></div>
+        <div class="pk-item" onclick="togglePk(this)"><div class="pk-box">✓</div><span class="pk-text">Bhasma Aarti confirmation (print + phone screenshot)</span></div>
+        <div class="pk-note">🚨 PRINT THIS. Phone may not work at 4 AM in the crowd.</div>
+        <div class="pk-item" onclick="togglePk(this)"><div class="pk-box">✓</div><span class="pk-text">Package booking confirmation / operator contact</span></div>
+        <div class="pk-item" onclick="togglePk(this)"><div class="pk-box">✓</div><span class="pk-text">Cash: ₹5,000–8,000 per person (small denominations)</span></div>
+        <div class="pk-note">Many temple areas & autos don't accept UPI. ₹10/₹20 notes for dakshina.</div>
+        <div class="pk-item" onclick="togglePk(this)"><div class="pk-box">✓</div><span class="pk-text">Debit / Credit card as backup</span></div>
+      </div>
+
+      <div class="pack-cat">
+        <h4>📱 Electronics</h4>
+        <div class="pk-item" onclick="togglePk(this)"><div class="pk-box">✓</div><span class="pk-text">Phone + charger + cable</span></div>
+        <div class="pk-item" onclick="togglePk(this)"><div class="pk-box">✓</div><span class="pk-text">Power bank 20,000 mAh (essential for 15h train)</span></div>
+        <div class="pk-item" onclick="togglePk(this)"><div class="pk-box">✓</div><span class="pk-text">Earphones / headphones (train comfort)</span></div>
+      </div>
+
+      <div class="pack-cat">
+        <h4>💊 Health & Survival (CRITICAL for June)</h4>
+        <div class="pk-item" onclick="togglePk(this)"><div class="pk-box">✓</div><span class="pk-text">ORS sachets (Electral/Enerzal) — minimum 6</span></div>
+        <div class="pk-note">🚨 NON-NEGOTIABLE in 44°C. Prevents dehydration & heat stroke.</div>
+        <div class="pk-item" onclick="togglePk(this)"><div class="pk-box">✓</div><span class="pk-text">Sunscreen SPF 50+ (face & body)</span></div>
+        <div class="pk-item" onclick="togglePk(this)"><div class="pk-box">✓</div><span class="pk-text">1L reusable water bottle (refill at hotel)</span></div>
+        <div class="pk-item" onclick="togglePk(this)"><div class="pk-box">✓</div><span class="pk-text">Medicines: Paracetamol, Dolo 650, Digene, Imodium</span></div>
+        <div class="pk-item" onclick="togglePk(this)"><div class="pk-box">✓</div><span class="pk-text">Wet wipes / face wipes (lifesaver in heat)</span></div>
+        <div class="pk-item" onclick="togglePk(this)"><div class="pk-box">✓</div><span class="pk-text">Hand sanitizer</span></div>
+        <div class="pk-item" onclick="togglePk(this)"><div class="pk-box">✓</div><span class="pk-text">Mosquito repellent (pre-monsoon = mosquitoes)</span></div>
+        <div class="pk-item" onclick="togglePk(this)"><div class="pk-box">✓</div><span class="pk-text">Compact umbrella (shade + sudden rain)</span></div>
+        <div class="pk-item" onclick="togglePk(this)"><div class="pk-box">✓</div><span class="pk-text">Toiletries: toothbrush, paste, soap, deo</span></div>
+      </div>
+
+      <div class="pack-cat">
+        <h4>🕉️ Temple & Pooja Items</h4>
+        <div class="pk-item" onclick="togglePk(this)"><div class="pk-box">✓</div><span class="pk-text">5–6 small polythene bags (for shoes at every temple)</span></div>
+        <div class="pk-note">You'll remove shoes 15+ times. Carry bags to keep shoes with you.</div>
+        <div class="pk-item" onclick="togglePk(this)"><div class="pk-box">✓</div><span class="pk-text">₹10/₹20 coins & small notes (dakshina & donations)</span></div>
+        <div class="pk-item" onclick="togglePk(this)"><div class="pk-box">✓</div><span class="pk-text">Small pooja thali (or buy complete kit at Ujjain — ₹50–100)</span></div>
+        <div class="pk-note">Full pooja kits available near Mahakal Gate. Can buy on arrival.</div>
+      </div>
+
+      <div class="pack-cat">
+        <h4>🚂 Train Comfort (2 overnight journeys)</h4>
+        <div class="pk-item" onclick="togglePk(this)"><div class="pk-box">✓</div><span class="pk-text">Bedsheet / thin blanket (AC coaches are cold!)</span></div>
+        <div class="pk-item" onclick="togglePk(this)"><div class="pk-box">✓</div><span class="pk-text">Chain lock for luggage</span></div>
+        <div class="pk-item" onclick="togglePk(this)"><div class="pk-box">✓</div><span class="pk-text">Snacks: biscuits, namkeen, fruits, dry fruits</span></div>
+        <div class="pk-item" onclick="togglePk(this)"><div class="pk-box">✓</div><span class="pk-text">Sleep mask + ear plugs (optional but helpful)</span></div>
+        <div class="pk-item" onclick="togglePk(this)"><div class="pk-box">✓</div><span class="pk-text">Tissue paper / toilet roll (train toilets)</span></div>
+      </div>
+    </div>
+
+    <!-- Bag Strategy -->
+    <div class="card reveal" style="margin-top:22px">
+      <h4 style="color:var(--gold-300);margin-bottom:14px">🎒 Packing Strategy: TWO BAGS ONLY</h4>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px">
+        <div>
+          <p style="font-size:.9rem;font-weight:600;color:var(--gold-400);margin-bottom:8px">BAG 1: Medium Backpack (40–50L)</p>
+          <ul style="list-style:none;padding:0">
+            <li style="font-size:.84rem;color:var(--text-secondary);padding:4px 0;display:flex;gap:6px"><span style="color:var(--gold-500)">→</span> All clothes, toiletries, medicines</li>
+            <li style="font-size:.84rem;color:var(--text-secondary);padding:4px 0;display:flex;gap:6px"><span style="color:var(--gold-500)">→</span> Train comfort items (blanket, snacks)</li>
+            <li style="font-size:.84rem;color:var(--text-secondary);padding:4px 0;display:flex;gap:6px"><span style="color:var(--gold-500)">→</span> Stays at hotel / in cab on Day 3</li>
+            <li style="font-size:.84rem;color:var(--text-secondary);padding:4px 0;display:flex;gap:6px"><span style="color:var(--gold-500)">→</span> Roll clothes, don't fold — saves 30% space</li>
+            <li style="font-size:.84rem;color:var(--text-secondary);padding:4px 0;display:flex;gap:6px"><span style="color:var(--gold-500)">→</span> Leave room for souvenirs (Mawa Bati, Rudraksha)</li>
+          </ul>
+        </div>
+        <div>
+          <p style="font-size:.9rem;font-weight:600;color:var(--saffron-light);margin-bottom:8px">BAG 2: Small Sling Bag (Daily Carry)</p>
+          <ul style="list-style:none;padding:0">
+            <li style="font-size:.84rem;color:var(--text-secondary);padding:4px 0;display:flex;gap:6px"><span style="color:var(--saffron)">→</span> Phone, wallet, documents, keys</li>
+            <li style="font-size:.84rem;color:var(--text-secondary);padding:4px 0;display:flex;gap:6px"><span style="color:var(--saffron)">→</span> Water bottle, ORS, sunscreen</li>
+            <li style="font-size:.84rem;color:var(--text-secondary);padding:4px 0;display:flex;gap:6px"><span style="color:var(--saffron)">→</span> Polythene bags (for shoes)</li>
+            <li style="font-size:.84rem;color:var(--text-secondary);padding:4px 0;display:flex;gap:6px"><span style="color:var(--saffron)">→</span> Umbrella, wet wipes</li>
+            <li style="font-size:.84rem;color:var(--text-secondary);padding:4px 0;display:flex;gap:6px"><span style="color:var(--saffron)">→</span> Small change for dakshina</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Pre-Departure ═══ -->
+<section class="section" id="predeparture">
+  <div class="container">
+    <div class="section-label">✅ Pre-Departure</div>
+    <h2 class="section-title">Before You Go — Action Items</h2>
+    <p class="section-desc">Do these NOW and 1 day before. Don't leave for last moment.</p>
+    <div class="card reveal">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px">
+        <div>
+          <h4 style="color:var(--saffron-light);font-size:.9rem;margin-bottom:12px">🔴 DO TODAY (Right Now!)</h4>
+          <div class="pk-item" onclick="togglePk(this)"><div class="pk-box">✓</div><span class="pk-text">Book Bhasma Aarti at shrimahakaleshwar.com</span></div>
+          <div class="pk-item" onclick="togglePk(this)"><div class="pk-box">✓</div><span class="pk-text">Call package operator (8976217145) — confirm:</span></div>
+          <div class="pk-note">1. Day 3 return is to UJJAIN (not Indore)<br>2. Can Bhasma Aarti fit into Day 1 or 2?<br>3. What time is Day 1 pickup?<br>4. Hotel names?</div>
+          <div class="pk-item" onclick="togglePk(this)"><div class="pk-box">✓</div><span class="pk-text">Download offline Google Maps: Ujjain, Indore, Omkareshwar</span></div>
+        </div>
+        <div>
+          <h4 style="color:var(--saffron-light);font-size:.9rem;margin-bottom:12px">📅 1 Day Before (June 23)</h4>
+          <div class="pk-item" onclick="togglePk(this)"><div class="pk-box">✓</div><span class="pk-text">Print train tickets (both PNRs)</span></div>
+          <div class="pk-item" onclick="togglePk(this)"><div class="pk-box">✓</div><span class="pk-text">Print Bhasma Aarti confirmation</span></div>
+          <div class="pk-item" onclick="togglePk(this)"><div class="pk-box">✓</div><span class="pk-text">Withdraw ₹5,000–8,000 cash (per person)</span></div>
+          <div class="pk-item" onclick="togglePk(this)"><div class="pk-box">✓</div><span class="pk-text">Buy ORS packets, sunscreen, snacks</span></div>
+          <div class="pk-item" onclick="togglePk(this)"><div class="pk-box">✓</div><span class="pk-text">Pack everything from checklist above</span></div>
+          <div class="pk-item" onclick="togglePk(this)"><div class="pk-box">✓</div><span class="pk-text">Charge all devices + power bank to 100%</span></div>
+          <div class="pk-item" onclick="togglePk(this)"><div class="pk-box">✓</div><span class="pk-text">Set alarm: 2:30 PM June 24 (leave for station)</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Tips ═══ -->
+<section class="section" id="tips">
+  <div class="container">
+    <div class="section-label">💡 Expert Tips</div>
+    <h2 class="section-title">Optimization & Survival</h2>
+    <div class="tips-grid reveal">
+      <div class="tip-card">
+        <h4>🔥 Bhasma Aarti Guide</h4>
+        <ul>
+          <li>Book at <strong>shrimahakaleshwar.com</strong> — only ~150 slots/day</li>
+          <li>Need Aadhaar for registration. 1 person can book for group.</li>
+          <li>Reach temple by 3:00 AM. Gate opens early for ticket holders.</li>
+          <li>Wear simple cotton dhoti/kurta — no jeans/fancy clothes.</li>
+          <li>No phones, cameras, bags inside inner sanctum.</li>
+          <li>Ritual takes ~2 hours. Standing entire time. Carry patience.</li>
+        </ul>
+      </div>
+      <div class="tip-card">
+        <h4>🌡️ Heat Survival (44°C)</h4>
+        <ul>
+          <li><strong>Drink 4–5 liters water per day</strong> — not optional!</li>
+          <li>ORS every 3–4 hours. Prevent dehydration before it starts.</li>
+          <li>NEVER skip 1–4 PM rest. Heat stroke is real and dangerous.</li>
+          <li>Cotton, light-colored, loose clothing. Synthetic = suffering.</li>
+          <li>Sunscreen every 3 hours, even inside auto-rickshaws.</li>
+          <li>Drink nimbu-pani or buttermilk at every opportunity.</li>
+          <li>Dizzy/nauseous? STOP. Shade. Pour water on head & neck.</li>
+        </ul>
+      </div>
+      <div class="tip-card">
+        <h4>🚫 Common Mistakes</h4>
+        <ul>
+          <li>Don't trust temple touts at gates. Use official counters only.</li>
+          <li>Don't pay >₹500 for "special pooja" — negotiate or use official.</li>
+          <li>Don't plan anything between 12–4 PM in June. Just don't.</li>
+          <li>Don't forget to book Bhasma Aarti — walk-in is chaos.</li>
+          <li>Don't carry valuables to temples — leave in hotel safe.</li>
+          <li>Don't drink tap water — bottled/filtered only.</li>
+          <li>Don't eat heavy lunch in June — keep it light, heavier dinner.</li>
+        </ul>
+      </div>
+      <div class="tip-card">
+        <h4>🛍️ What to Buy</h4>
+        <ul>
+          <li><strong>Mawa Bati</strong> — Ujjain's famous sweet. Buy near Tower Chowk.</li>
+          <li><strong>Rudraksha Mala</strong> — From shops near Mahakal. Verify quality.</li>
+          <li><strong>Mahakal brass idols / frames</strong> — Temple market souvenirs.</li>
+          <li><strong>Bhasma packets</strong> — Sacred ash from Mahakal.</li>
+          <li><strong>Ratlami Sev</strong> — Famous namkeen. Buy in Indore.</li>
+          <li><strong>Indori Namkeen variety</strong> — From Om Namkeen, Indore.</li>
+        </ul>
+      </div>
+      <div class="tip-card">
+        <h4>📱 Useful Apps & Contacts</h4>
+        <ul>
+          <li><strong>NTES / RailYatri</strong> — Live train tracking</li>
+          <li><strong>Google Maps (offline)</strong> — Download before trip</li>
+          <li><strong>shrimahakaleshwar.com</strong> — Bhasma Aarti booking</li>
+          <li><strong>IRCTC eCatering</strong> — Order food on train</li>
+          <li><strong>Package operator</strong> — 📞 8976217145</li>
+          <li><strong>Emergency</strong> — 112 (All India)</li>
+        </ul>
+      </div>
+      <div class="tip-card">
+        <h4>⚡ Time-Saving Hacks</h4>
+        <ul>
+          <li>Shighra Darshan is in package — saves 1–2 hrs queue at BOTH Jyotirlingas.</li>
+          <li>Day 1 afternoon (4–5:30 PM) is your FREE slot for add-on temples.</li>
+          <li>Pre-negotiate auto fare before getting in. Ujjain autos have no meters.</li>
+          <li>Buy pooja items in bulk near Mahakal Gate — enough for all temples.</li>
+          <li>Don't eat dinner on Day 2 — Sarafa Bazaar IS dinner. Go hungry!</li>
+          <li>At Sarafa: split dishes with friends = try more, spend less.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ Footer ═══ -->
+<footer>
+  <div class="mantra">ॐ नमः शिवाय | हर हर महादेव</div>
+  <p>Ujjain Sacred Journey Planner — Built with devotion 🙏</p>
+  <p style="margin-top:6px">Pune → Ujjain → Indore → Omkareshwar → Pune &nbsp;|&nbsp; June 24–28, 2025 &nbsp;|&nbsp; 2 Friends, 2 Jyotirlingas, ∞ Blessings</p>
+</footer>
+
+<script>
+// ═══ Day Tabs ═══
+function switchDay(n){
+  document.querySelectorAll('.day-tab').forEach((t,i)=>t.classList.toggle('active',i===n));
+  document.querySelectorAll('.day-content').forEach((c,i)=>c.classList.toggle('active',i===n));
+}
+
+// ═══ Packing Checkbox ═══
+function togglePk(el){el.classList.toggle('checked');updatePP()}
+function updatePP(){
+  const t=document.querySelectorAll('.pk-item').length;
+  const c=document.querySelectorAll('.pk-item.checked').length;
+  const p=Math.round((c/t)*100);
+  const f=document.getElementById('ppFill');const x=document.getElementById('ppText');
+  if(f)f.style.width=p+'%';if(x)x.textContent=c+' / '+t+' items ('+p+'%)';
+}
+
+// ═══ Scroll Reveal ═══
+const obs=new IntersectionObserver(e=>{e.forEach(en=>{if(en.isIntersecting)en.target.classList.add('visible')})},{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+// ═══ Nav scroll ═══
+window.addEventListener('scroll',()=>{
+  document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>50);
+});
+
+// ═══ Budget bars ═══
+const bObs=new IntersectionObserver(e=>{e.forEach(en=>{if(en.isIntersecting){
+  document.querySelectorAll('.b-bar-fill').forEach(b=>{setTimeout(()=>{b.style.width=b.dataset.width+'%'},200)})
+}})},{threshold:.3});
+document.querySelectorAll('.budget-grid').forEach(el=>bObs.observe(el));
+
+// ═══ Active nav ═══
+const secs=document.querySelectorAll('.section[id]');
+window.addEventListener('scroll',()=>{let cur='';secs.forEach(s=>{if(window.scrollY>=s.offsetTop-120)cur=s.id});
+  document.querySelectorAll('.nav-links a').forEach(a=>{a.classList.toggle('active',a.getAttribute('href')==='#'+cur)});
+});
+
+// ═══ Gantt Chart Generator ═══
+function buildGantt(){
+  const days=[
+    {
+      label:'Day 0 — Travel',sub:'Wed, Jun 24',
+      start:14,end:22, // 2 PM to 10 PM
+      blocks:[
+        {s:14.5,e:15.5,label:'🚉 Station',cls:'gb-travel',tip:'Reach Pune Jn by 2:30 PM'},
+        {s:15.5,e:21,label:'🚂 Train to Ujjain (Overnight)',cls:'gb-travel',tip:'DAUND INDORE EXP — 14h 52m'},
+        {s:21,e:22,label:'😴 Sleep',cls:'gb-rest',tip:'Set alarm 5:45 AM'}
+      ]
+    },
+    {
+      label:'Day 1 — Ujjain Darshan',sub:'Thu, Jun 25 · 📍 Ujjain',
+      start:6,end:22, // 6 AM to 10 PM
+      blocks:[
+        {s:6.4,e:8.5,label:'🏨 Arrive + Hotel',cls:'gb-rest',tip:'Arrive 6:25 AM · Freshen up · Breakfast'},
+        {s:9,e:11.5,label:'🔱 MAHAKALESHWAR',cls:'gb-temple-hl',tip:'Jyotirlinga #3 · Shighra VIP Darshan · 📦 Package'},
+        {s:11.5,e:12.25,label:'🏛️ Mahakal Lok',cls:'gb-temple',tip:'900m corridor · 108 pillars · 📦 Package'},
+        {s:12.25,e:12.75,label:'⚡ Harsiddhi',cls:'gb-temple',tip:'Shaktipeeth · 📦 Package'},
+        {s:12.75,e:13.25,label:'🐘 Bade Ganesh',cls:'gb-temple',tip:'Giant Ganesh idol · 📦 Package'},
+        {s:13.25,e:14.25,label:'🍽️ Lunch',cls:'gb-food',tip:'Package lunch · Hydrate!'},
+        {s:14.25,e:16,label:'🛌 REST (44°C!)',cls:'gb-rest',tip:'⚠️ Peak heat · Stay indoors · AC + ORS'},
+        {s:16,e:16.5,label:'🛕 Mamleshwar',cls:'gb-addon',tip:'✨ Add-on · Upper Mahakal linga · 200m walk'},
+        {s:16.5,e:17,label:'🛕 Gopal Mandir',cls:'gb-addon',tip:'✨ Add-on · Krishna temple · Maratha style'},
+        {s:17,e:17.5,label:'🪐 Navagraha',cls:'gb-addon',tip:'✨ Add-on · 9 Planets temple'},
+        {s:18,e:19.5,label:'🪔 RAM GHAT AARTI',cls:'gb-temple-hl',tip:'⭐ Must-Do · Kshipra river aarti · Reach 6:30 PM · 📦 Package'},
+        {s:20,e:21,label:'🍽️ Dinner',cls:'gb-food',tip:'Package dinner · Browse temple shops after'},
+        {s:21,e:22,label:'😴 Sleep',cls:'gb-rest',tip:'Rest for morning temples tomorrow'}
+      ]
+    },
+    {
+      label:'Day 2 — Ujjain → Indore',sub:'Fri, Jun 26 · 📍 Ujjain AM → Indore PM',
+      start:3,end:24, // 3 AM to midnight
+      blocks:[
+        {s:3,e:6,label:'🔥 BHASMA AARTI',cls:'gb-special',tip:'⭐⭐⭐ Once-in-a-lifetime! Book separately! 4 AM start'},
+        {s:6,e:7.5,label:'🏨 Hotel',cls:'gb-rest',tip:'Rest after Bhasma Aarti · Freshen up'},
+        {s:7.5,e:8,label:'🍽️',cls:'gb-food',tip:'Breakfast · 📦 Package'},
+        {s:8,e:8.67,label:'🍷 Kaal Bhairav',cls:'gb-temple',tip:'⭐ Liquor as prasad! · 📦 Package'},
+        {s:8.83,e:9.33,label:'🛕 Mangalnath',cls:'gb-temple',tip:'Mars temple · Hilltop views · 📦 Package'},
+        {s:9.5,e:10.25,label:'📚 Sandipani',cls:'gb-temple',tip:'Krishna\'s school · Gomti Kund · 📦 Package'},
+        {s:10.33,e:10.83,label:'⚡ Gadhkalika',cls:'gb-temple',tip:'Shakti Peeth · Kalidasa blessed here · 📦 Package'},
+        {s:10.83,e:11.25,label:'🔭 Jantar Mantar',cls:'gb-addon',tip:'✨ Add-on · Observatory · ₹15 entry'},
+        {s:11.5,e:13,label:'🚗 → Indore',cls:'gb-travel',tip:'55 km · 1.5 hrs · 📦 Package transfer'},
+        {s:13,e:14,label:'🍽️ Lunch + Hotel',cls:'gb-food',tip:'Indore check-in · 📦 Package'},
+        {s:14,e:16,label:'🛌 REST',cls:'gb-rest',tip:'⚠️ Peak heat · Recharge for Sarafa!'},
+        {s:16,e:16.75,label:'🏰 Rajwada',cls:'gb-temple',tip:'Holkar Palace · Great photos · 📦 Package'},
+        {s:17,e:17.75,label:'🐘 Khajrana',cls:'gb-temple',tip:'Famous Ganesh temple · 📦 Package'},
+        {s:18,e:18.5,label:'🛕 Annapurna',cls:'gb-temple',tip:'South Indian style temple · 📦 Package'},
+        {s:18.5,e:21,label:'🏨 Rest + Prep',cls:'gb-rest',tip:'Freshen up · DO NOT eat dinner!'},
+        {s:21,e:24,label:'🌃 SARAFA BAZAAR',cls:'gb-sarafa',tip:'⭐⭐ India\'s #1 night food market! Opens 9 PM · ₹200-400 self-paid'}
+      ]
+    },
+    {
+      label:'Day 3 — Omkareshwar + Departure',sub:'Sat, Jun 27 · 📍 Indore → Omkareshwar → Ujjain',
+      start:5,end:18.5, // 5 AM to 6:30 PM
+      blocks:[
+        {s:5.5,e:6,label:'📦 Pack',cls:'gb-rest',tip:'Check out · Luggage in cab'},
+        {s:6,e:8.5,label:'🚗 → Omkareshwar',cls:'gb-travel',tip:'80 km · 2.5 hrs · 📦 Package'},
+        {s:8.5,e:9,label:'🍽️',cls:'gb-food',tip:'Breakfast en route · 📦 Package'},
+        {s:9,e:11,label:'🔱 OMKARESHWAR',cls:'gb-temple-hl',tip:'⭐ Jyotirlinga #4 · OM-shaped island · Shighra VIP · 📦 Package'},
+        {s:11,e:11.75,label:'🛕 Mamleshwar',cls:'gb-temple',tip:'Companion temple · Narmada bank · 📦 Package'},
+        {s:11.75,e:12.5,label:'🌊 Narmada Ghat',cls:'gb-temple',tip:'Holy dip · Photography · 📦 Package'},
+        {s:12.5,e:13.25,label:'🍽️ Lunch',cls:'gb-food',tip:'Lunch at Omkareshwar · 📦 Package'},
+        {s:13.5,e:16.5,label:'🚗 → Ujjain (⚠️ 140 km)',cls:'gb-travel',tip:'⚠️ CRITICAL: Leave by 1:30 PM! 3-3.5 hrs drive'},
+        {s:16.5,e:17,label:'🚉 Station',cls:'gb-rest',tip:'Buy Mawa Bati · Water · Snacks'},
+        {s:17.9,e:18.5,label:'🚂 Train → Pune',cls:'gb-travel',tip:'INDB DAUND EXP · Arrive Pune Sun 8:50 AM'}
+      ]
+    }
+  ];
+
+  const chart=document.getElementById('ganttChart');
+  if(!chart)return;
+  chart.innerHTML='';
+
+  days.forEach(day=>{
+    const range=day.end-day.start;
+    const dayEl=document.createElement('div');
+    dayEl.className='gantt-day';
+
+    // Day label
+    const lbl=document.createElement('div');
+    lbl.className='gantt-day-label';
+    lbl.innerHTML=day.label+' <span class="gdl-sub">'+day.sub+'</span>';
+    dayEl.appendChild(lbl);
+
+    // Ruler
+    const ruler=document.createElement('div');
+    ruler.className='gantt-ruler';
+    for(let h=day.start;h<day.end;h++){
+      const mark=document.createElement('div');
+      mark.className='gantt-ruler-mark';
+      mark.style.flex=1;
+      const hr12=h%24;
+      const ampm=hr12<12?'AM':'PM';
+      const displayH=hr12===0?12:(hr12>12?hr12-12:hr12);
+      mark.textContent=displayH+(hr12%2===0?' '+ampm:'');
+      ruler.appendChild(mark);
+    }
+    dayEl.appendChild(ruler);
+
+    // Track
+    const track=document.createElement('div');
+    track.className='gantt-track';
+
+    let cursor=day.start;
+    day.blocks.forEach(b=>{
+      // Gap before this block
+      if(b.s>cursor){
+        const gap=document.createElement('div');
+        gap.className='gantt-block gb-gap';
+        gap.style.flex=(b.s-cursor);
+        track.appendChild(gap);
+      }
+      // Block
+      const block=document.createElement('div');
+      block.className='gantt-block '+b.cls;
+      block.style.flex=(b.e-b.s);
+      if(b.tip)block.setAttribute('data-tip',b.tip);
+
+      const durMin=Math.round((b.e-b.s)*60);
+      const labelSpan=document.createElement('span');
+      labelSpan.textContent=b.label;
+      block.appendChild(labelSpan);
+
+      // Duration sub-label
+      const timeSpan=document.createElement('div');
+      timeSpan.className='gb-time';
+      const sh=Math.floor(b.s),sm=Math.round((b.s%1)*60);
+      const eh=Math.floor(b.e),em=Math.round((b.e%1)*60);
+      const fmt=h=>{const hr=h%24;const ap=hr<12?'a':'p';const d=hr===0?12:(hr>12?hr-12:hr);return d+(ap==='a'?'a':'p');};
+      timeSpan.textContent=durMin+'m';
+      block.appendChild(timeSpan);
+
+      track.appendChild(block);
+      cursor=b.e;
+    });
+    // Trailing gap
+    if(cursor<day.end){
+      const gap=document.createElement('div');
+      gap.className='gantt-block gb-gap';
+      gap.style.flex=(day.end-cursor);
+      track.appendChild(gap);
+    }
+
+    dayEl.appendChild(track);
+    chart.appendChild(dayEl);
+  });
+}
+
+// Init
+buildGantt();
+updatePP();
+</script>
+</body>
+</html>
